@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_background">
+
+    <TextView
+        android:id="@+id/tvStatusSelectTitle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:text="@string/who_is_the_account_created_for"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/flParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:id="@+id/flParent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/cyan_background"
+        app:layout_constraintBottom_toTopOf="@+id/flChild"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHeight_percent="0.15" >
+
+        <TextView
+            android:id="@+id/tvParent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:text="@string/parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/ivParent"
+            android:background="@drawable/view_oval_rectangle"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/img_right_arrow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flChild"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/green_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/flMentor"
+        app:layout_constraintHeight_percent="0.15" >
+
+        <TextView
+            android:id="@+id/tvChild"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:text="@string/child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/ivChild"
+            android:background="@drawable/view_oval_rectangle"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/img_right_arrow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flMentor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/orange_background"
+        app:layout_constraintBottom_toTopOf="@+id/flSchool"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tvMentor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="left"
+            android:text="@string/mentor"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+        <ImageView
+            android:id="@+id/ivMentor"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/view_oval_rectangle"
+            android:src="@drawable/img_right_arrow" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flSchool"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/pink_alpha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/flSponsor"
+        app:layout_constraintHeight_percent="0.15" >
+
+        <TextView
+            android:id="@+id/tvSchool"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:text="@string/school"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/ivSchool"
+            android:background="@drawable/view_oval_rectangle"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/img_right_arrow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flSponsor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/dark_brown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHeight_percent="0.15" >
+
+        <TextView
+            android:id="@+id/tvSponsor"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:text="@string/sponsor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/ivSponsor"
+            android:background="@drawable/view_oval_rectangle"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/img_right_arrow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        app:contentInsetStartWithNavigation= "0dp"
+
+        android:id="@+id/toolbar"
+        android:background="@color/purple_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/ivBack"
+                android:src="@drawable/img_left_arrow_white"
+                android:layout_gravity="left|center_vertical"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:text="@string/change_Password"
+                android:id="@+id/tvTitle"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </FrameLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_marginTop="?attr/actionBarSize"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+     <LinearLayout
+         android:id="@+id/ll"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:layout_marginTop="20dp"
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+         <EditText
+             android:id="@+id/etOldPass"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:layout_marginTop="10dp"
+             android:gravity="left|center"
+             android:background="@drawable/background_rectangle_gray"
+             android:paddingLeft="5dp"
+             android:maxLength="30"
+             android:maxLines="1"
+             android:textSize="13sp"
+             android:hint="@string/Enter_your_old_password"
+             android:textColor="@color/blue_sea"
+             />
+
+         <EditText
+             android:id="@+id/etNewPass"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:layout_marginTop="10dp"
+             android:gravity="left|center"
+             android:background="@drawable/background_rectangle_gray"
+             android:paddingLeft="5dp"
+             android:maxLength="30"
+             android:maxLines="1"
+             android:textSize="13sp"
+             android:hint="@string/Enter_a_new_password"
+             android:textColor="@color/blue_sea"
+             />
+
+         <EditText
+             android:id="@+id/etNewPass2"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:layout_marginTop="10dp"
+             android:gravity="left|center"
+             android:background="@drawable/background_rectangle_gray"
+             android:paddingLeft="5dp"
+             android:maxLength="30"
+             android:maxLines="1"
+             android:textSize="13sp"
+             android:hint="@string/repeat_new_password"
+             android:textColor="@color/blue_sea"
+             />
+
+         <Button
+             android:text="@string/change"
+             android:textColor="@color/white"
+             android:background="@drawable/btn_background_purple_code_access"
+             android:paddingLeft="50dp"
+             android:paddingRight="50dp"
+             android:layout_marginTop="30dp"
+             android:textSize="12sp"
+             android:layout_gravity="center"
+             android:textAllCaps="false"
+             android:id="@+id/btnEdit"
+             android:layout_width="wrap_content"
+             android:layout_height="50dp"/>
+     </LinearLayout>
+    </ScrollView>
+</FrameLayout>

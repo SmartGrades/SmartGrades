@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "55878544340",
+    "firebase_url": "https://smartgrades-1fb7d.firebaseio.com",
+    "project_id": "smartgrades-1fb7d",
+    "storage_bucket": "smartgrades-1fb7d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55878544340:android:6d57ec3abb731e50ed8441",
+        "android_client_info": {
+          "package_name": "kz.tech.smartgrades"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "55878544340-fjlm459ia0p1sl8c1h2s1frofprg5m9j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDT5OKtEkd0BTtwdjALkhCtQYm46Fh3vkg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "55878544340-fjlm459ia0p1sl8c1h2s1frofprg5m9j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llSortChangePopup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    app:cardBackgroundColor="@color/transparent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvTitle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Завершение спонсорской недели:"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTitle1Value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="01.01.2001"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTitle1"
+                app:layout_constraintStart_toEndOf="@+id/tvTitle1"
+                app:layout_constraintTop_toTopOf="@+id/tvTitle1" />
+
+            <TextView
+                android:id="@+id/tvTitle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Завершение спонсорского месяца:"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/tvTitle1"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle1" />
+
+            <TextView
+                android:id="@+id/tvTitle2Value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="01.01.2001"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTitle2"
+                app:layout_constraintStart_toStartOf="@+id/tvTitle1Value"
+                app:layout_constraintTop_toTopOf="@+id/tvTitle2" />
+
+            <TextView
+                android:id="@+id/tvTitle3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Вознаграждение за неделю: "
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/tvTitle2"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle2" />
+
+            <TextView
+                android:id="@+id/tvTitle3Value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 KZT"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTitle3"
+                app:layout_constraintStart_toStartOf="@+id/tvTitle2Value"
+                app:layout_constraintTop_toTopOf="@+id/tvTitle3" />
+
+            <TextView
+                android:id="@+id/tvTitle4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Вознаграждение за месяц: "
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/tvTitle3"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle3" />
+
+            <TextView
+                android:id="@+id/tvTitle4Value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 KZT"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTitle4"
+                app:layout_constraintStart_toStartOf="@+id/tvTitle3Value"
+                app:layout_constraintTop_toTopOf="@+id/tvTitle4" />
+
+            <TextView
+                android:id="@+id/tvTitle5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Календарь"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/tvTitle4"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle4" />
+
+            <TextView
+                android:id="@+id/tvTitle5Value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="подробнее"
+                android:textColor="@color/blue_sea"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTitle5"
+                app:layout_constraintStart_toStartOf="@+id/tvTitle4Value"
+                app:layout_constraintTop_toTopOf="@+id/tvTitle5" />
+
+            <TextView
+                android:id="@+id/tvTitle6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Условия спонсорства"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/tvTitle5"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle5" />
+
+            <TextView
+                android:id="@+id/tvTitle6Value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="подробнее"
+                android:textColor="@color/blue_sea"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTitle6"
+                app:layout_constraintStart_toStartOf="@+id/tvTitle5Value"
+                app:layout_constraintTop_toTopOf="@+id/tvTitle6" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

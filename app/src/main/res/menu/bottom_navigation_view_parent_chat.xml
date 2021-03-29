@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_rhombus"
+        android:icon="@drawable/img_rhombus"
+        android:title=""/>
+
+    <item
+        android:id="@+id/action_square"
+        android:icon="@drawable/img_square"
+        android:title="" />
+
+    <item
+        android:id="@+id/action_money"
+        android:icon="@drawable/img_money_gray"
+        android:title="" />
+
+    <item
+        android:id="@+id/action_step"
+        android:icon="@drawable/img_step"
+        android:title="" />
+
+    <item
+        android:id="@+id/action_circle"
+        android:icon="@drawable/img_circle"
+        android:title="" />
+
+</menu>

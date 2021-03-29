@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="50dp"
+        android:gravity="left|center_vertical"
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:id="@+id/ivPlusOrMinus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+</FrameLayout>
