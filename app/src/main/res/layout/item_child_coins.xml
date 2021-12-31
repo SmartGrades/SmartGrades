@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvCoinsCount"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:text="0"
+        android:gravity="bottom|center"
+        android:textColor="@color/gray_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="140dp">
+
+        <ImageView
+            android:id="@+id/ivCoinsGroup0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:background="@drawable/img_coins_row_18"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/ivCoinsGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/img_coins_row_18"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/ivCoinsGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/img_coins_row_18"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/ivCoinsGroup3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/img_coins_row_18"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/ivCoinsGroup4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/img_coins_row_18"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/civAvatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/img_child_tool_coin_plus"/>
+
+        <ProgressBar
+            android:id="@+id/pbAvatar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressDrawable="@drawable/custom_progres_bar"
+            android:indeterminate="false"
+            android:progress="0"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvDayInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/0"
+            android:textStyle="bold"
+            android:textColor="@color/purple_alpha"
+            android:textSize="10dp"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Копилка"
+        android:layout_gravity="center"/>
+
+    <FrameLayout
+        android:id="@+id/flButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="50dp"
+            android:layout_height="15dp"
+            android:layout_gravity="left"
+            android:text="Отмена"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_view_background_color_blue_sea_v2"/>
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="50dp"
+            android:layout_height="15dp"
+            android:layout_gravity="right"
+            android:text="Ок"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_view_background_color_blue_sea_v2"/>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/Indicate_the_reason_for_rejection"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:textColor="@color/purple_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:id="@+id/flRejection1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:gravity="left|center_vertical"
+            android:text="@string/Contact_me_let_discuss"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/img_circle_purple_unchecked"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flRejection2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:gravity="left|center_vertical"
+            android:text="@string/Do_not_specify"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/img_circle_purple_unchecked"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+
+
+    </FrameLayout>
+
+</LinearLayout>

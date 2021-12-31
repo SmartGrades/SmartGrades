@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_background">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civNavAvatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/img_default_avatar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivNavEdit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/img_edit_white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvNavFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                tools:text="FullName"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/civNavAvatar" />
+
+            <TextView
+                android:id="@+id/tvNavLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                tools:text="Login"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/tvNavFullName" />
+
+            <TextView
+                android:id="@+id/tvNavPhoneOrMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                tools:text="PhoneNumber"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvNavLogin" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:id="@+id/flComplaint"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvComplaint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="left|center_vertical"
+                android:text="@string/Complaint"
+                android:textAllCaps="true"
+                android:textColor="@color/red"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="@color/purple_background" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flMyFamily"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvMyFamily"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="left|center_vertical"
+                android:text="@string/my_family"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="@color/purple_background" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flCashAdd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvCashAdd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="left|center_vertical"
+                android:text="@string/topup_account"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="@color/purple_background" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flCashExtract"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvCashExtract"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="left|center_vertical"
+                android:text="@string/our_money"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="@color/purple_background" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flMyCash"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvMyCash"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="left|center_vertical"
+                android:text="@string/my_pocket_money"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="@color/purple_background" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flNavPushNotification"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvNavPushNotifications"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="left|bottom"
+                android:text="@string/notification"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvNavPushTurnOffOrOn"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="20dp"
+                android:gravity="left|top"
+                android:text="Вкл."
+                android:textColor="@color/blue_sea"
+                android:textSize="12sp" />
+
+            <Switch
+                android:id="@+id/sNavPushTurnOffOrOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                app:thumbTint="@color/white"
+                app:trackTint="@drawable/switch_purple" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="@color/purple_background" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flNavQuickAccessCode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tvNavQuickAccessCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="left|center_vertical"
+                android:text="@string/fast_access_code"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="@color/purple_background" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flNavPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tvNavPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="left|center_vertical"
+                android:text="@string/password"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="@color/purple_background" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flNavAppAbout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvNavAppAbout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="left|center_vertical"
+                android:text="@string/about_app"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="@color/purple_background" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flNavInviteFriends"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tvNavInviteFriends"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="50dp"
+                android:gravity="left|center_vertical"
+                android:text="@string/call_friends"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/img_share_purple" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="@color/purple_background" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flNavSupport"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tvNavSupport"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="left|center_vertical"
+                android:text="@string/Support_service"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="@color/purple_background" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/smart_grades_android_v1_0"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+</ScrollView>

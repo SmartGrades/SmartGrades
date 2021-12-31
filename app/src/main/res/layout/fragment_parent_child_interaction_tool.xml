@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_background"
+        android:contentInsetStart="0dp"
+
+        android:contentInsetLeft="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/img_left_arrow_white" />
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivMenu"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/img_white_move" />
+
+        </FrameLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clChildInfo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/purple_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civAvatar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/civAvatar"
+            app:layout_constraintTop_toTopOf="@+id/civAvatar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/flPushNotifications"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clChildInfo">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="10dp"
+            android:gravity="left|bottom"
+            android:text="Уведомления"
+            android:textColor="@color/gray_dark_sheet"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCheckedPushNotifications"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="10dp"
+            android:gravity="left|top"
+            android:text="Выключены"
+            android:textColor="@color/gray_default"
+            android:textSize="10sp" />
+
+        <Switch
+            android:id="@+id/sPushNotifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            app:thumbTint="@color/white"
+            app:trackTint="@drawable/switch_purple" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvTitleInteractionTool"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/purple_background"
+        android:gravity="center"
+        android:text="Инструменты взимодействия"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flPushNotifications" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleInteractionTool">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue_specter"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/flTemporaryCoins"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="75dp"
+                    android:gravity="left|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Временные монеты"
+                        android:textColor="@color/blue_sea"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 Временная монета = 20 минутам за гаджетом"
+                        android:textColor="@color/gray_default"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/sTemporaryCoins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10dp"
+                    app:thumbTint="@color/white"
+                    app:trackTint="@drawable/switch_purple" />
+
+
+            </FrameLayout>
+            <!--    android:visibility="gone" -->
+            <LinearLayout
+                android:id="@+id/llTemporaryCoins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:id="@+id/flCoins"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:src="@drawable/img_coins_gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:gravity="left|center_vertical"
+                        android:text="Текущий счет"
+                        android:textColor="@color/gray_dark_sheet"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tvCoins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="15dp"
+                        android:gravity="right|center_vertical"
+                        android:text="0"
+                        android:textColor="@color/blue_sea"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginLeft="50dp"
+                        android:background="@color/gray_line" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/flPiggy"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:src="@drawable/img_piggy_gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:gravity="left|center_vertical"
+                        android:text="Копилка"
+                        android:textColor="@color/gray_dark_sheet"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tvPiggy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="15dp"
+                        android:gravity="right|center_vertical"
+                        android:text="0"
+                        android:textColor="@color/blue_sea"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginLeft="50dp"
+                        android:background="@color/gray_line" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/flBank"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:src="@drawable/img_bank_gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:gravity="left|center_vertical"
+                        android:text="Банк"
+                        android:textColor="@color/gray_dark_sheet"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tvBank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="15dp"
+                        android:gravity="right|center_vertical"
+                        android:text="0"
+                        android:textColor="@color/blue_sea"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginLeft="50dp"
+                        android:background="@color/gray_line" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/flAutoCharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:src="@drawable/img_auto_charge" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:gravity="left|center_vertical"
+                        android:text="Автоначисление"
+                        android:textColor="@color/gray_dark_sheet"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tvAutoCharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right|center_vertical"
+                        android:textColor="@color/blue_sea"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/img_right_arrow_purple" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:id="@+id/flGadgetTime"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="75dp"
+                    android:gravity="left|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Время за гаджетом"
+                        android:textColor="@color/blue_sea"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="По истечении времени гаджет блокируется. Родитель может начислять и отнимать время."
+                        android:textColor="@color/gray_default"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/sGadgetTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10dp"
+                    app:thumbTint="@color/white"
+                    app:trackTint="@drawable/switch_purple" />
+            </FrameLayout>
+            <!--    android:visibility="gone" -->
+            <LinearLayout
+                android:id="@+id/llGadgetTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:id="@+id/flAvailableTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:src="@drawable/img_available_time" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:gravity="left|center_vertical"
+                        android:text="Доступное время"
+                        android:textColor="@color/gray_dark_sheet"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tvAvailableTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right|center_vertical"
+                        android:textColor="@color/blue_sea"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginLeft="50dp"
+                        android:background="@color/gray_line" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/flAutoChargeAvailableTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:src="@drawable/img_auto_charge" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:gravity="left|center_vertical"
+                        android:text="Автоначисление"
+                        android:textColor="@color/gray_dark_sheet"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tvAutoChargeAvailableTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right|center_vertical"
+                        android:textColor="@color/blue_sea"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/img_right_arrow_purple" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:id="@+id/flSteps"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="75dp"
+                    android:gravity="left|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Шаги к цели"
+                        android:textColor="@color/blue_sea"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Шаг за шагом ребенок будет идти к своей цели. Цель - то, что хочет получить ребенок, Шаги - действия ребенка "
+                        android:textColor="@color/gray_default"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/sSteps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10dp"
+                    app:thumbTint="@color/white"
+                    app:trackTint="@drawable/switch_purple" />
+
+
+            </FrameLayout>
+            <!--    android:visibility="gone" -->
+            <LinearLayout
+                android:id="@+id/llSteps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvSteps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <FrameLayout
+                    android:id="@+id/flAddSteps"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:src="@drawable/img_cross2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:gravity="left|center_vertical"
+                        android:text="Добавить цель"
+                        android:textColor="@color/gray_dark_sheet"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/img_right_arrow_purple" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="75dp"
+                    android:gravity="left|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Деньги"
+                        android:textColor="@color/blue_sea"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/money_description"
+                        android:textColor="@color/gray_default"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/sMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10dp"
+                    app:thumbTint="@color/white"
+                    app:trackTint="@drawable/switch_purple" />
+            </FrameLayout>
+            <!--    android:visibility="gone" -->
+            <LinearLayout
+                android:id="@+id/llMoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:id="@+id/flMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:src="@drawable/img_money" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:gravity="left|center_vertical"
+                        android:text="Текущий счет"
+                        android:textColor="@color/gray_dark_sheet"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tvGroupName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="15dp"
+                        android:gravity="right|center_vertical"
+                        android:text="0"
+                        android:textColor="@color/blue_sea"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginLeft="50dp"
+                        android:background="@color/gray_line" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/flLocked"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:src="@drawable/img_locked" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="left|top"
+                        android:layout_marginLeft="50dp"
+                        android:gravity="left|bottom"
+                        android:text="Ограничения"
+                        android:textColor="@color/gray_dark_sheet"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="left|bottom"
+                        android:layout_marginLeft="50dp"
+                        android:gravity="left|top"
+                        android:text="Без ограничения"
+                        android:textColor="@color/blue_sea"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/img_right_arrow_purple" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="75dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="left|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Умные оценки"
+                        android:textColor="@color/blue_sea"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvGradeDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Полученные ребенком оценки конвертируются в ценности для него."
+                        android:textColor="@color/gray_default"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/sSmart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10dp"
+                    app:thumbTint="@color/white"
+                    app:trackTint="@drawable/switch_purple" />
+
+            </FrameLayout>
+            <!--    android:visibility="gone" -->
+            <LinearLayout
+                android:id="@+id/llSmart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvSmart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="75dp"
+                    android:gravity="left|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Обычные оценки"
+                        android:textColor="@color/blue_sea"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Традиционные школьные оценки "
+                        android:textColor="@color/gray_default"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/sOrdinary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10dp"
+                    app:thumbTint="@color/white"
+                    app:trackTint="@drawable/switch_purple" />
+            </FrameLayout>
+            <!--    android:visibility="gone" -->
+            <LinearLayout
+                android:id="@+id/llOrdinary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:id="@+id/flOrdinary"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:src="@drawable/img_smart" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="left|top"
+                        android:layout_marginLeft="50dp"
+                        android:gravity="left|bottom"
+                        android:text="Обычные оценки"
+                        android:textColor="@color/gray_dark_sheet"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="left|bottom"
+                        android:layout_marginLeft="50dp"
+                        android:gravity="left|top"
+                        android:textColor="@color/blue_sea"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/img_right_arrow_purple" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/purple_background"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:src="@drawable/img_left_arrow_white" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/my_family"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </FrameLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/tvLabelParents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/parentDot"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/tvLabelParents"
+            app:layout_constraintStart_toStartOf="@+id/tvLabelParents"
+            app:layout_constraintTop_toBottomOf="@+id/tvLabelParents">
+
+            <LinearLayout
+                android:id="@+id/llParent1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civAvatarParent1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/img_default_avatar"
+                    app:civ_border_color="@color/purple_alpha"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/tvNameParent1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="FullName"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/civAvatar"
+                    app:layout_constraintStart_toStartOf="@+id/civAvatar"
+                    app:layout_constraintTop_toBottomOf="@+id/civAvatar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llParent2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civAvatarParent2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/img_default_avatar"
+                    app:civ_border_color="@color/purple_alpha"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/tvNameParent2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="FullName"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/civAvatar"
+                    app:layout_constraintStart_toStartOf="@+id/civAvatar"
+                    app:layout_constraintTop_toBottomOf="@+id/civAvatar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAddParent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/add_user_green"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/add"
+                    android:textColor="@color/gray_default"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/civAvatar"
+                    app:layout_constraintStart_toStartOf="@+id/civAvatar"
+                    app:layout_constraintTop_toBottomOf="@+id/civAvatar" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvLabelChildrens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/childDot"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <LinearLayout
+            android:id="@+id/llChildrens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/tvLabelChildrens"
+            app:layout_constraintStart_toStartOf="@+id/tvLabelChildrens"
+            app:layout_constraintTop_toBottomOf="@+id/tvLabelChildrens">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llChild1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civAvatarChild1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/img_default_avatar"
+                    app:civ_border_color="@color/purple_alpha"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/tvNameChild1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="FullName"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/civAvatar"
+                    app:layout_constraintStart_toStartOf="@+id/civAvatar"
+                    app:layout_constraintTop_toBottomOf="@+id/civAvatar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llChild2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civAvatarChild2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/img_default_avatar"
+                    app:civ_border_color="@color/purple_alpha"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/tvNameChild2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="FullName"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/civAvatar"
+                    app:layout_constraintStart_toStartOf="@+id/civAvatar"
+                    app:layout_constraintTop_toBottomOf="@+id/civAvatar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llChild3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civAvatarChild3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/img_default_avatar"
+                    app:civ_border_color="@color/purple_alpha"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/tvNameChild3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="FullName"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/civAvatar"
+                    app:layout_constraintStart_toStartOf="@+id/civAvatar"
+                    app:layout_constraintTop_toBottomOf="@+id/civAvatar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llChild4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civAvatarChild4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/img_default_avatar"
+                    app:civ_border_color="@color/purple_alpha"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/tvNameChild4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="FullName"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/civAvatar"
+                    app:layout_constraintStart_toStartOf="@+id/civAvatar"
+                    app:layout_constraintTop_toBottomOf="@+id/civAvatar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llChild5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civAvatarChild5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/img_default_avatar"
+                    app:civ_border_color="@color/purple_alpha"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/tvNameChild5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="FullName"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/civAvatar"
+                    app:layout_constraintStart_toStartOf="@+id/civAvatar"
+                    app:layout_constraintTop_toBottomOf="@+id/civAvatar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAddChild"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/add_user_green"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/add"
+                    android:textColor="@color/gray_default"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/civAvatar"
+                    app:layout_constraintStart_toStartOf="@+id/civAvatar"
+                    app:layout_constraintTop_toBottomOf="@+id/civAvatar" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_background_purple_alpha"
+            android:enabled="false"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="Сохранить"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLogin" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/purple_background"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:src="@drawable/img_left_arrow_white" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/edit_acc"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </FrameLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civAvatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/img_default_avatar"
+            app:civ_border_color="@color/purple_alpha"
+            app:civ_border_width="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <ProgressBar
+            android:id="@+id/pgAvatarUpload"
+            android:visibility="gone"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:indeterminate="true"
+            app:layout_constraintBottom_toBottomOf="@+id/civAvatar"
+            app:layout_constraintEnd_toEndOf="@+id/civAvatar"
+            app:layout_constraintStart_toStartOf="@+id/civAvatar"
+            app:layout_constraintTop_toTopOf="@+id/civAvatar" />
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/img_icon_mentor"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/civAvatar"
+            app:layout_constraintTop_toTopOf="@+id/civAvatar" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivPhotoSetting"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/img_photo_settings"
+            app:layout_constraintBottom_toBottomOf="@+id/civAvatar"
+            app:layout_constraintEnd_toEndOf="@+id/civAvatar" />
+
+        <TextView
+            android:id="@+id/tvFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="FullName"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/civAvatar"
+            app:layout_constraintStart_toStartOf="@+id/civAvatar"
+            app:layout_constraintTop_toBottomOf="@+id/civAvatar" />
+
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Login"
+            android:textColor="@color/gray_default"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvFullName"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="@+id/tvFullName"
+            app:layout_constraintTop_toBottomOf="@+id/tvFullName" />
+
+        <TextView
+            android:id="@+id/tvAboutMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/bioDot"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLogin" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvAboutMe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:layout_constraintStart_toStartOf="@+id/tvAboutMe"
+            app:layout_constraintTop_toBottomOf="@+id/tvAboutMe">
+
+            <EditText
+                android:id="@+id/etAboutMe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="@string/hint1"
+                android:maxLength="160"
+                android:minHeight="100dp"
+                android:textColorHint="@color/gray_default"
+                android:textSize="12sp" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_background_purple_alpha"
+            android:enabled="false"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvAboutMe" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_background"
+    android:clickable="true"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvPhoneTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/enter_your_phone_number"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/tvLabelEnterPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="phone number"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/etPhoneEnter"
+            app:layout_constraintStart_toStartOf="@+id/tvLabelPhoneNumber" />
+
+        <TextView
+            android:id="@+id/tvLabelPhoneNumber"
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:text="+7"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/etPhoneEnter"
+            app:layout_constraintEnd_toStartOf="@+id/etPhoneEnter"
+            app:layout_constraintTop_toTopOf="@+id/etPhoneEnter" />
+
+        <EditText
+            android:id="@+id/etPhoneEnter"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/white"
+            android:cursorVisible="true"
+            android:hint="@string/enter_your_phone_number"
+            android:maxLength="10"
+            android:inputType="phone"
+            android:textColor="@color/white"
+            android:textColorHint="@color/place_holder"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPhoneTitle" />
+
+        <ImageView
+            android:id="@+id/ivCheck"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/img_green_uncheck"
+            app:layout_constraintStart_toStartOf="@+id/tvLabelPhoneNumber"
+            app:layout_constraintTop_toBottomOf="@+id/etPhoneEnter" />
+
+        <TextView
+            android:id="@+id/tvAccept"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:text="@string/I_have_read_and_accept_the_terms_of_use_and_privacy_policy"
+            app:layout_constraintEnd_toEndOf="@+id/etPhoneEnter"
+            app:layout_constraintStart_toEndOf="@+id/ivCheck"
+            app:layout_constraintTop_toTopOf="@+id/ivCheck" />
+
+        <Button
+            android:id="@+id/btnSendCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_square_gray"
+            android:padding="10dp"
+            android:text="@string/Send_SMS_code"
+            android:textColor="@color/purple_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAccept" />
+
+        <EditText
+            android:id="@+id/etSMSCode"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:inputType="numberPassword"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:cursorVisible="true"
+            android:gravity="center"
+            android:hint="Введите код из СМС"
+            android:maxLength="10"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textColorHint="@color/place_holder"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/btnSendCode"
+            app:layout_constraintStart_toStartOf="@+id/btnSendCode"
+            app:layout_constraintTop_toBottomOf="@+id/btnSendCode" />
+
+        <ImageView
+            android:id="@+id/ivNext"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/img_right_arrow_uncheck_green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

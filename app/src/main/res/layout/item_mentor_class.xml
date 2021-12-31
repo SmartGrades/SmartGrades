@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvClass"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvClassName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxWidth="180dp"
+            android:maxLength="33"
+            android:maxLines="2"
+            android:text="ColumnName"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/ivMenu"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivMenu"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/img_extra_menu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvLessons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toStartOf="@+id/llStudents"
+            app:layout_constraintStart_toStartOf="@+id/tvClassName"
+            app:layout_constraintTop_toBottomOf="@+id/tvClassName" />
+
+        <View
+            android:id="@+id/vOnClick"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/rvLessons"
+            app:layout_constraintEnd_toEndOf="@+id/rvLessons"
+            app:layout_constraintStart_toStartOf="@+id/rvLessons"
+            app:layout_constraintTop_toTopOf="@+id/rvLessons" />
+
+        <LinearLayout
+            android:id="@+id/llLessons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/llStudents"
+            app:layout_constraintStart_toStartOf="@+id/tvClassName"
+            app:layout_constraintTop_toTopOf="@+id/llStudents">
+
+            <TextView
+                android:id="@+id/tvTitleNotLessons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_square_red_v2"
+                android:padding="5dp"
+                android:text="@string/no_lessons"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llStudents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/ivMenu"
+            app:layout_constraintTop_toBottomOf="@+id/tvClassName">
+
+            <TextView
+                android:id="@+id/tvTitleNotStudents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_square_red_v2"
+                android:padding="5dp"
+                android:text="@string/no_students"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/ivStudentsCount"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/img_school_students_count"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvStudentsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="0"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

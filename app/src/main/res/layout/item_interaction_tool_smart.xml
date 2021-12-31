@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flAddSteps"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civAvatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="left|center_vertical"
+        android:src="@drawable/img_black_rhombus" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        android:gravity="left|center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:text="Умные оценки = Временные монеты"
+            android:textColor="@color/gray_dark_sheet"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvStepTarget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:text="Цель"
+            android:textColor="@color/blue_sea"
+            android:textSize="10sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:layout_gravity="left|center"
+            android:text="2=0;   3=0;   4=0;   5=0;   5+=0"
+            android:textColor="@color/blue_sea"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvParentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:text="ФИО"
+            android:textColor="@color/blue_sea"
+            android:textSize="10sp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/img_right_arrow_purple" />
+</FrameLayout>

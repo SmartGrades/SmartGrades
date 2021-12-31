@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/tvCardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Номер карты:"
+        android:textColor="@color/blue_sea"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/tvCardNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Действительна до:"
+        android:textColor="@color/blue_sea"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/etEnterCardNumber"
+        app:layout_constraintTop_toBottomOf="@+id/etEnterCardNumber" />
+
+
+    <TextView
+        android:id="@+id/tvCardNumber4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="ФИО"
+        android:textColor="@color/blue_sea"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/etEnterDate1"
+        app:layout_constraintTop_toBottomOf="@+id/etEnterDate1" />
+
+    <TextView
+        android:id="@+id/tvCardNumber5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="CVC Код"
+        android:textColor="@color/blue_sea"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/etEnterFullName"
+        app:layout_constraintTop_toBottomOf="@+id/etEnterFullName" />
+
+    <TextView
+        android:id="@+id/tvCardNumber3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="/"
+        android:textColor="@color/blue_sea"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etEnterDate1"
+        app:layout_constraintStart_toEndOf="@+id/etEnterDate1"
+        app:layout_constraintTop_toTopOf="@+id/etEnterDate1" />
+
+    <EditText
+        android:id="@+id/etEnterCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:hint="1234 1234 1234 1234"
+        android:inputType="number"
+        android:maxLength="16"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCardNumber" />
+
+    <EditText
+        android:id="@+id/etEnterFullName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:gravity="left"
+        android:hint="FULL NAME"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCardNumber4" />
+
+    <EditText
+        android:id="@+id/etCode"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:hint="001"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvCardNumber5"
+        app:layout_constraintTop_toBottomOf="@+id/tvCardNumber5" />
+
+    <EditText
+        android:id="@+id/etEnterDate1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:hint="01"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvCardNumber2"
+        app:layout_constraintTop_toBottomOf="@+id/tvCardNumber2" />
+
+    <EditText
+        android:id="@+id/etEnterDate2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:hint="01"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/etEnterDate1"
+        app:layout_constraintStart_toEndOf="@+id/tvCardNumber3"
+        app:layout_constraintTop_toTopOf="@+id/etEnterDate1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvAdd"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_background_purple_alpha"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="Добавить"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCode" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

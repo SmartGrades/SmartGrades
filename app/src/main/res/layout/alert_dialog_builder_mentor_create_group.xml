@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="@string/group_name"
+        android:textColor="@color/purple_background"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etEnterCreateGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:maxLength="40"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/no_more_40_char"
+        android:textColor="@color/gray_default"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tvSelectLessons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="@string/lesson_mentor"
+        android:textColor="@color/purple_background"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvSelectLessonValue"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/background_rectangle_gray"
+        android:gravity="left|center"
+        android:hint="@string/chouse_from_list"
+        android:paddingLeft="10dp"
+        android:textColor="@color/blue_sea"
+        android:textSize="13sp" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tvDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:text="@string/default1"
+            android:textColor="@color/blue_sea"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/tvOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textColor="@color/gray_default"
+            android:textSize="12sp" />
+
+    </FrameLayout>
+
+</LinearLayout>

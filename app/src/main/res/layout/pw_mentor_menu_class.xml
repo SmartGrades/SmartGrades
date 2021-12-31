@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llSortChangePopup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/transparent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/llDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/ivDelete"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/img_delete_v2" />
+
+                <TextView
+                    android:id="@+id/tvDelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/delete"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivDelete"
+                    app:layout_constraintStart_toEndOf="@+id/ivDelete"
+                    app:layout_constraintTop_toTopOf="@+id/ivDelete" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="@+id/llDelete"
+                app:layout_constraintTop_toBottomOf="@+id/llDelete"/>
+
+            <LinearLayout
+                android:id="@+id/llRename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="@+id/llMove"
+                app:layout_constraintTop_toBottomOf="@+id/llMove">
+
+                <ImageView
+                    android:id="@+id/ivRename"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/img_edit_gray" />
+
+                <TextView
+                    android:id="@+id/tvRename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/rename"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivRename"
+                    app:layout_constraintStart_toStartOf="@+id/tvMove"
+                    app:layout_constraintTop_toTopOf="@+id/ivRename" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

@@ -1,0 +1,1078 @@
+<resources>
+    <string name="stringname" translatable="false">"This string doesn't need translation"</string>
+    <string name="app_name">SmartGrades</string>
+
+    <string name="mail_or_phone">Телефон или почта</string>
+    <string name="password">Пароль</string>
+    <string name="sign_in">Войти</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="enter_your_mail">Введите ваш e-mail</string>
+    <string name="enter_your_phone_number">Введите ваш номер телефона</string>
+    <string name="mail">email</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="who_is_the_account_created_for">Выберите роль аккаунта:</string>
+    <string name="parent">Родитель</string>
+    <string name="child">Ребенок</string>
+    <string name="mentor">Наставник</string>
+    <string name="school">Школа</string>
+    <string name="sponsor">Спонсор</string>
+    <string name="name">Имя</string>
+    <string name="surname">Фамилия</string>
+    <string name="enter_name">Введите ваше имя</string>
+    <string name="enter_surname">Введите вашу фамилию</string>
+    <string name="what_is_your_name">Как вас зовут?</string>
+    <string name="set_an_avatar_for_your_account">Установите аватар для своего аккаунта</string>
+    <string name="enter_date_of_birth">Укажите дату рождения</string>
+    <string name="day">День</string>
+    <string name="month">Месяц</string>
+    <string name="year">Год</string>
+    <string name="create_login">Придумайте логин</string>
+    <string name="enter_login">Введите логин</string>
+    <string name="create_password">Придумайте пароль</string>
+    <string name="enter_password">Введите пароль</string>
+    <string name="create_access">Придумайте код доступа</string>
+    <string name="add_child_title">Создать аккаунт для Вашего ребенка?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="enter_full_name_child">Введите имя и фамилию ребенка</string>
+    <string name="birthday">Дата рождения</string>
+    <string name="gender">Пол</string>
+    <string name="enter_family_status">Установите семейные статусы</string>
+    <string name="your_status_for_child">КЕМ ВЫ ЯВЛЯЕТЕСЬ РЕБЕНКУ?</string>
+    <string name="another_family_member">Другое уполномоченное лицо</string>
+    <string name="set_an_avator_for_your_child">Установите аватар для аккаунта ребенка</string>
+    <string name="hardware_access_title">Предоставление разрешений</string>
+    <string name="account_serach">Поиск аккаунта</string>
+    <string name="enter_child_name">Введите имя</string>
+    <string name="enter_child_surname">Введите фамилию</string>
+    <string name="kids">Дети</string>
+    <string name="mentors">Менторы</string>
+    <string name="add_mentor">Добавить ментора</string>
+    <string name="proposal_mentor">Заявка на взаимодействие с ментором </string>
+    <string name="ward">Подопечный</string>
+    <string name="not_select">Не выбрано</string>
+    <string name="tools_integrate">Инструмент взаимодействия</string>
+    <string name="tools_interval">Интервал инструмента</string>
+    <string name="target">Цель</string>
+    <string name="send">Отправить</string>
+
+    <string name="TemporaryСoinsType" translatable="false">TemporaryСoins</string>
+    <string name="GadgetTimeType" translatable="false">GadgetTime</string>
+    <string name="StepsType" translatable="false">Steps</string>
+    <string name="MoneyType" translatable="false">Money</string>
+    <string name="TemporaryСoins">Умные оценки = Временные монеты</string>
+    <string name="GadgetTime">Умные оценки = Время за геджетом</string>
+    <string name="Steps">Умные оценки = Шаги к цели</string>
+    <string name="Money">Умные оценки = Деньги</string>
+
+    <string name="money_description">Ребенок может сам "зарабатывать" и тратить свои
+деньги, которые Родители ему начисляют или
+отнимают за какие-либо действия. </string>
+
+    <string name="money_locked_dialog">Вы уверены,
+что хотите отключить
+Инструмент "Деньги"?</string>
+
+
+    <string name="temporary_coins_dialog">Вы действительно хотите выключить
+инструмент "Временные монеты"?</string>
+
+    <string name="temporary_coins_dialog_2">Одна монета равна 20 минут работы гаджета.
+Если монеты закончатся, то гаджет будет
+заблокирован. Чтобы возобновить работу
+гаджета, родитель со своего аккаунта может
+начислить монеты.
+
+Рекомендуем выдавать монеты ребенку
+за какие-либо полезные действия.</string>
+
+    <string name="gadget_time_dialog">Вы уверены,
+что хотите отключить
+ инструмент "Время за гаджетом"?</string>
+
+
+    <string name="steps_dialog">Вы уверены,
+что хотите отключить
+ инструмент "Шаги к цели"?</string>
+
+    <string name="steps_page_bottom_text">После подтверждения формы ребенком
+инструмент станет доступным.</string>
+
+    <string name="smart_dialog">Вы уверены,
+что хотите отключить
+ инструмент "Умные оценки"?</string>
+
+
+    <string name="exit">Выход</string>
+    <string name="coins">Монеты</string>
+    <string name="contracts">Контакты</string>
+    <string name="current_balance">Текущий баланс</string>
+    <string name="min">min</string>
+    <string name="h">h.</string>
+    <string name="accrual">Начисление</string>
+    <string name="you_not_incremented_coins">Вы не увеличили монеты</string>
+    <string name="coin_one_min">1 (20 minute)</string>
+    <string name="coin_zero_five_min">0,5(10 minute)</string>
+    <string name="more_details">подробнее ...</string>
+    <string name="go_to_signing">Перейти к подписанию</string>
+    <string name="new_contract">Новый контракт</string>
+    <string name="contract_execution">Вам необходимо выполнить свою часть контракта.</string>
+    <string name="preparation_of_contract">Подготовка договора</string>
+    <string name="contract">Контакты</string>
+    <string name="select_avatar">Выберите аватар</string>
+    <string name="enter_child_purpose">Введите цель ребенка</string>
+    <string name="enter_the_number_of_steps">Введите количество шагов</string>
+    <string name="contract_signing">Подписание договора</string>
+    <string name="congratulations_the_contract_is_concluded">Поздравляю! Заключен договор!</string>
+    <string name="remember_to_help_your_child">Не забудьте помочь своему ребенку достичь своей цели.</string>
+    <string name="try_credit_to_the_child">Постарайтесь сразу отправиться в путь, ребенок будет отслеживать свои шаги к цели на своем устройстве.</string>
+    <string name="to_the_main">На главную</string>
+    <string name="print_contract">Распечатать договор</string>
+    <string name="cancel_contract">Отменить договор</string>
+    <string name="repeat_all_conditions">Повторите все условия. Если ребенок согласен, пусть нажмет соответствующую кнопку.</string>
+
+    <string name="status">Статус</string>
+    <string name="avatar">Аватар</string>
+    <string name="save">Сохранить</string>
+    <string name="change_status">Изменить статус</string>
+    <string name="father">Отец</string>
+    <string name="mother">Мама</string>
+    <string name="daughter">Дочь</string>
+    <string name="son">Сын</string>
+    <string name="affordable_time_for_children">Доступное время для детей</string>
+    <string name="set_time_limits">Установите ограничение по времени, ночной режим (но не более 12 часов.)</string>
+    <string name="why_can_i_limit">Почему я могу ограничить его максимум 12 часами в день?</string>
+    <string name="disable_all_day_restrictions">Отключить ограничения на целый день</string>
+    <string name="cancel">Отмена</string>
+    <string name="set_the_interval_for_access">Установите интервал доступа к устройствам, но не менее 10ч.</string>
+    <string name="start">start</string>
+    <string name="end">end</string>
+
+    <string name="current_password">Текущий пароль</string>
+    <string name="new_password">Новый пароль</string>
+    <string name="new_password_again">Новый пароль еще раз</string>
+    <string name="forgotten_password">Если вы забыли пароль, вы можете</string>
+    <string name="drop_him">drop him.</string>
+    <string name="enter_current_password">Введите текущий пароль</string>
+    <string name="enter_new_password">Введите новый пароль</string>
+    <string name="enter_new_password_again">Введите новый пароль еще раз</string>
+    <string name="current_quick_access_code">Текущий код быстрого доступа</string>
+    <string name="new_quick_access_code">Новый код быстрого доступа</string>
+    <string name="new_quick_access_code_again">Новый код быстрого доступа</string>
+    <string name="enter_current_quick_access_code">Введите текущий код быстрого доступа</string>
+    <string name="enter_new_quick_access_code">Введите новый код быстрого доступа</string>
+    <string name="enter_new_quick_access_code_again">Введите новый код быстрого доступа еще раз</string>
+    <string name="sound_notifications">Звуковые уведомления</string>
+    <string name="vibration">Вибрация</string>
+    <string name="popup_notifications">Всплывающие уведомления</string>
+    <string name="set_the_number_of_coins">Установите количество монет, которое будет списываться автоматически</string>
+    <string name="accrual_recommendations">Рекомендации по начислениям</string>
+    <string name="disable_all_auto_charges_by_day">Отключить все автоматические списания по дням</string>
+    <string name="auto_charge_time">Время автоматической зарядки</string>
+    <string name="change_dot">изменение...</string>
+    <string name="dialog_title_delete_device">Вы уверены, что хотите удалить устройства?</string>
+
+    <string name="device_deleted_permanently">Устройство будет удалено без возможности восстановления</string>
+    <string name="devices_cannot_be_restored">Устройства не подлежат восстановлению</string>
+    <string name="devices_removed">Удаленные устройства</string>
+    <string name="open_access_for">Открытый доступ для:</string>
+    <string name="change_user_to">Измените пользователя на:</string>
+    <string name="grant_access">Предоставление доступа:</string>
+    <string name="close_access_for_all_children">Закрытый доступ для всех детей</string>
+    <string name="open_access_for_all_children">Открытый доступ для всех детей</string>
+    <string name="login">Логин</string>
+    <string name="device_blocked">Устройство заблокировано</string>
+    <string name="coins_ends">Монеты закончились</string>
+    <string name="parent_to_replenish">Вы можете связаться с родителем для пополнения баланса</string>
+    <string name="no_new_contracts">Нет новых контрактов</string>
+    <string name="login_dot">логин:</string>
+    <string name="mail_dot">mail:</string>
+
+    <string name="password_dot">пароль:</string>
+    <string name="name_dot">имя:</string>
+    <string name="quiack_access_code_dot">код быстрого доступа:</string>
+    <string name="quiack_access_code">Код быстрого доступа</string>
+    <string name="select_parent">Выбрать родителя</string>
+
+    <string name="enter_mail">Введите почту</string>
+
+    <string name="password_must_be_with_six_symbols">Пароль должен состоять из 6 символов.</string>
+    <string name="enter_quick_access_code">Введите код быстрого доступа</string>
+    <string name="quick_access_code_must_be_with_six_numbers">Код быстрого доступа должен состоять из 4 цифр.</string>
+    <string name="description">Описание</string>
+    <string name="we_are_in_social_networks">Мы в соцсетях</string>
+    <string name="select_status_family_member">Выберите статус члена семьи</string>
+    <string name="create">Создать</string>
+    <string name="family_member">Член семьи</string>
+    <string name="obols_accounting_interval">Интервал учета монет</string>
+
+    <string name="lock_text_one">Вы действительно хотите заблокировать доступ для всех детей на этом устройстве?</string>
+    <string name="lock_text_two">Будут доступны только звонки, сообщения и мессенджеры.</string>
+    <string name="lock_text_three">Вы можете открыть доступ в любое время</string>
+    <string name="unlock_text_one">Вы действительно хотите разрешить доступ всем детям на этом устройстве?</string>
+    <string name="unlock_text_two">Система учета монет будет отключена</string>
+    <string name="unlock_text_three">Доступ можно изменить в любой момент</string>
+    <string name="checked_count_steps_text_one">Вы уверены, что хотите поставить галочку?</string>
+    <string name="checked_count_steps_text_two">Будет выставлен чек</string>
+    <string name="checked_count_steps_text_three">Вы можете снять флажок в любой момент.</string>
+    <string name="unchecked_count_steps_text_one">Are you sure you want to uncheck?</string>
+    <string name="unchecked_count_steps_text_two">The checkmark will be removed</string>
+    <string name="unchecked_count_steps_text_three">You can check the box at any time</string>
+    <string name="alert_check_child_parent">Parent and child do not confirm agreement</string>
+    <string name="alert_check_child">The child has not confirmed the agreement under the contract</string>
+    <string name="alert_check_parent">Parent did not confirm agreement</string>
+    <string name="alert_delete_contract_text_one">Are you sure you want to delete the contract?</string>
+    <string name="alert_delete_contract_text_two">The contract cannot be restored</string>
+    <string name="alert_delete_contract_text_three">The contract will be permanently deleted</string>
+    <string name="password_changed">Password changed</string>
+    <string name="the_current_password_is_not_correct">The current password is not correct</string>
+    <string name="new_password_and_confirmation_password_do_not_match">New password and confirmation password do not match</string>
+    <string name="quick_access_code_changed">Quick access code changed</string>
+    <string name="the_current_quick_access_code_is_not_correct">The current quick access code is not correct</string>
+    <string name="new_quick_access_code_and_confirmation_quick_access_code_do_not_match">New quick access code and confirmation quick access code do not match</string>
+    <string name="personal_data_changed">Personal data changed</string>
+    <string name="time_children_dialog_text_one">Are you sure you want to disable this day?</string>
+    <string name="time_children_dialog_text_two">This day will be off</string>
+    <string name="time_children_dialog_text_three">You can turn on time at any time</string>
+    <string name="turn_off">Отключить</string>
+    <string name="auto_charge_coins_dialog_text_one">Are you sure you want to disable auto-charging?</string>
+    <string name="auto_charge_coins_dialog_text_two">Auto charge will be disabled on this day</string>
+    <string name="auto_charge_coins_dialog_text_three">At any time, auto charge can be turned on</string>
+    <string name="auto_charege_coins_time_title">Set time for auto charge</string>
+    <string name="family_room">Family room</string>
+    <string name="hello">hello!</string>
+    <string name="invalid_access_code">Invalid access code</string>
+    <string name="enter_new_device_name">Enter a new name for the phone</string>
+    <string name="to_get_a_permission">To get a permission</string>
+    <string name="goodbye">Goodbye</string>
+    <string name="family_room_dialog_text_one">Do you really want to leave?</string>
+    <string name="family_room_dialog_text_two">You are leaving a family group</string>
+    <string name="family_room_dialog_text_three">You can log in again at any time</string>
+    <string name="fulfills">Fulfills</string>
+    <string name="fulfills_dialog_text_one">Have you really fulfilled your part of the transaction?</string>
+    <string name="fulfills_dialog_text_two">Deal will be confirmed</string>
+    <string name="fulfills_dialog_text_three">At any time, you can cancel the transaction</string>
+    <string name="reports_week_text_one">On average per week spent: </string>
+    <string name="reports_week_text_two">Daily allowance exceeded in</string>
+    <string name="reports_month_text_one">Average spent per month: </string>
+    <string name="obols">Obols</string>
+    <string name="times">times</string>
+    <string name="blocked_app">Application control</string>
+    <string name="default_list_menu">Test</string>
+    <string name="standard_list_menu">Standard</string>
+    <string name="customizable_menu">Customizable</string>
+    <string name="warning">WARNING</string>
+    <string name="device_description">For the application to run successfully in the background, you must do the following:</string>
+    <string name="autostart">Autostart</string>
+    <string name="cabinet">Cabinet</string>
+    <string name="change_range_coins">Change the range of obols</string>
+    <string name="piggy_text">In the piggy bank</string>
+    <string name="bank_text">In the bank</string>
+    <string name="devices">Devices</string>
+    <string name="auto_charge_text">Auto charge</string>
+    <string name="children_time_text">Timing</string>
+    <string name="fecit">Fecit</string>
+    <string name="good_deal_text_one">Congratulations!
+        The contract is executed!</string>
+    <string name="good_deal_text_two">Do not stop there</string>
+    <string name="editing_a_contract">Editing a contract</string>
+    <string name="save_change">Save change</string>
+    <string name="bank">Банк</string>
+    <string name="piggy">Piggy bank</string>
+    <string name="change_daily_rate">Change daily rate</string>
+    <string name="reports_on">Reports on</string>
+    <string name="choose_account_type">Choose account type</string>
+    <string name="password_recovery">Password recovery</string>
+
+    <string name="next">Далее</string>
+    <string name="back">Назад</string>
+    <string name="restore">Восстановить</string>
+    <string name="content">Content</string>
+    <string name="calendar">Calendar</string>
+    <string name="add_schoolboy">Add schoolboy</string>
+    <string name="family_members">Family members</string>
+
+
+    <string name="add_family_member">Add family member</string>
+    <string name="search">Поиск</string>
+
+    <string name="upbringer">Upbringer</string>
+
+    <string name="accrual_of_coins">Accrual of coins</string>
+    <string name="accrual_of_offset">Accrual of offset</string>
+    <string name="prevent_interaction">Prevent interaction</string>
+    <string name="select_checked">Select</string>
+    <string name="selection_of_the_ward">Selection of the ward (wards)</string>
+    <string name="form_of_interaction">Form of interaction</string>
+    <string name="teacher">Учитель</string>
+    <string name="trainer">Trainer</string>
+    <string name="nanny">Nanny</string>
+    <string name="relative">Relative</string>
+    <string name="super_achievement">Super achievement</string>
+    <string name="push_text">Notification to add a ward</string>
+    <string name="add_group">Add group</string>
+    <string name="add_group_dialog_title">Name of the new group</string>
+    <string name="add_group_dialog_warning">no more than 20 characters</string>
+    <string name="from">От</string>
+    <string name="to">До</string>
+    <string name="refuse">Отказаться</string>
+    <string name="add">Добавить</string>
+    <string name="group_selection">Выбор группы</string>
+    <string name="child_added">Child added to group</string>
+    <string name="you_added_a_ward">You added a ward</string>
+    <string name="you_refused_to_add_a_ward">You refused to add a ward</string>
+
+
+    <string name="mentor_status">Set mentor status
+
+        (visible only to you)</string>
+
+    <string name="accrual_of_coins_title">Set the interval within which the mentor will be able to accrue obl</string>
+    <string name="accrual_of_offset_title">Set the interval within which the mentor will be able to credit</string>
+
+    <string name="mentor_note_one">Comment on the form (can be changed):</string>
+    <string name="mentor_note_two">Hello! Please add my child as your ward.</string>
+    <string name="mentor_note_three">Message to Mentor</string>
+
+    <string name="mentors_empty">Family Friends (Mentors) -
+        teachers, educators, trainers, relatives, friends and other people,
+        which can also accrue / subtract obols and offsets
+        (control functions are provided by the parent individually).
+        By interacting with mentors, the child will be more
+        involved in the process of its development.
+    </string>
+
+    <string name="no_contracts_title">There are no existing contracts.</string>
+    <string name="no_contracts_text">Tell the parent what you would like to receive -
+
+        your goal. You need to achieve your goal.
+
+        Parent will help you, he will say how
+
+        way you can get it.
+
+    </string>
+
+    <string name="family_group">Family group</string>
+    <string name="add_user">Add user</string>
+
+    <string name="device_group">Device Group</string>
+    <string name="device">Device</string>
+    <string name="user">User</string>
+
+    <string name="reports">Reports</string>
+
+    <string name="settings">Settings</string>
+    <string name="personal_data">Personal data</string>
+
+
+    <string name="time_children">Affordable time for children</string>
+    <string name="auto_charge">Automatic accrual</string>
+    <string name="notification">Уведомление</string>
+    <string name="change_language">Change language</string>
+    <string name="change_quick_access_code">Change Quick Access Code</string>
+    <string name="change_password">Change Password</string>
+
+
+    <string name="about_application">About application</string>
+
+
+    <string name="recall_comment">Recall/Comment</string>
+
+    <string name="xiaomi_text">Please enable:
+
+
+        Turn off Miui Optimizations on Developer Settings, then Restart the phone.
+Settings > Advanced Settings > Battery manager > Power plan is set to Performance
+Device Settings > Advanced Settings > Battery Manager > Protected apps – your app needs to be Protected
+Device Settings > Apps > your app > Battery > Power-intensive prompt and Keep running after screen off
+Settings > Additional Settings > Battery and Performance > Manage apps’ battery usage and here:
+1. Switch Power Saving Modes to Off
+2. Choose the next options: Saving Power in The Background > Choose apps > select your app > Background Settings > No restrictions</string>
+
+    <string name="app_lock_dialog_msg">At the end of the allotted time (SALVES) for the child,
+        this device will be partially blocked. Choose one of the types of application control:
+1) Test (only YouTube and Google Play are blocked)
+2) Standard (everything is blocked except calls, SMS and instant messengers)
+3) Custom (you yourself manually determine the list of allowed and blocked applications)
+You can change these settings at any time.</string>
+
+    <string name="phone_access">Phone access</string>
+    <string name="phone_text">Permission is required to obtain the IMEI of this device and to carry out further monitoring by parents.</string>
+
+    <string name="data_access">Data access</string>
+    <string name="service_killer_permission">You need to give permission for the application</string>
+    <string name="service_killer_text">For the application to work, you must provide access rights to the data.
+        By clicking on the red arrow, you will go to the application settings with access to data.
+        Find the eSparta app there and enable usage tracking for it. Go back to the Application.</string>
+    <string-array name="languages">
+        <item>English</item>
+        <item>Russian</item>
+    </string-array>
+
+
+    <string name="about_app_description">family_group1</string>
+
+    <string name="about_app_sub_description">When used correctly, the app
+        parents and their children will reach
+        very great results in all directions
+        laziness (sports, art, health, training,
+        education, discipline, financial
+        literacy, negotiation skills, etc.)</string>
+
+    <string-array name="about_contract">
+        <item>Find out what the child would like to receive (Purpose of the child).</item>
+        <item>Set your conditions for the child, what he must do to achieve this goal.</item>
+        <item>Control and track the process of achieving the goal by the child.</item>
+        <item>If the child fulfills the conditions of the contract, fulfill your duty - provide the child with what he deserves.</item>
+        <item>Do not stop there, improve your child’s knowledge and skills, set goals and achieve them!</item>
+    </string-array>
+
+
+    <string-array name="description_contract">
+        <item>For example, a soccer ball, ice cream, a movie trip to the Lion King.</item>
+        <item>The child will see his target on his device.</item>
+        <item>Examples of one step:
+            - 15 push ups
+            - learn 5 new words in english
+            - go to bed at 22.00h and so on...</item>
+        <item>How many steps should a child take to achieve his goal?
+            The child will see progress on his device-
+            Do not forget to manually count each step.</item>
+    </string-array>
+
+
+    <string-array name="title_contract">
+        <item>Indicate the purpose of the child</item>
+        <item>Set goal avatar</item>
+        <item>Indicate what a child must do to complete one step</item>
+        <item>Enter the number of steps</item>
+    </string-array>
+
+
+    <string-array name="days_of_the_week">
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Th</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
+
+
+    <string-array name="from_to">
+        <item>from</item>
+        <item>to</item>
+    </string-array>
+
+    <string-array name="days_full">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Предыдущий</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_child">ChildActivity</string>
+    <string name="my_income_sources">Мои источники дохода:</string>
+    <string name="no_source_of_income">Сейчас источников дохода нет</string>
+    <string name="no_lessens">Сейчас предметов нет</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Привет пустой фрагмент</string>
+    <string name="smart_grades">Умные оценки</string>
+    <string name="loading">Загрузка...</string>
+    <string name="account_registration">Регистрация аккаунта</string>
+    <string name="Invite_added_to_the_family_group">Приглашение на добавление в семейную группу</string>
+    <string name="My_parent_already_has_a_Smart_Grades_account">У моего родителя уже есть аккаунт Smart Grades</string>
+    <string name="Find_my_parent_account">Найти аккаунт моего родителя</string>
+    <string name="join">Присоединиться</string>
+    <string name="My_parent_does_not_have_a_Smart_Grades_account">У моего родителя нет аккаунта Smart Grades</string>
+    <string name="today">Сегодня</string>
+    <string name="The_list_of_transactions_empty">Список транзакций пуст</string>
+    <string name="sponsoring">Спонсорство:</string>
+    <string name="week">Неделя</string>
+    <string name="week_prog">Прогресс недели:</string>
+    <string name="day_5">5 дней</string>
+    <string name="my_lessons">Мои предметы:</string>
+    <string name="There_are_no_items_now">Сейчас нет предметов</string>
+    <string name="Ask_the_parent_to_create_items">Попросите родителей создать уроки. Если вы включите Smart Grades и будете хорошо учиться, вы получите карманные деньги.</string>
+    <string name="Ask_to_create">Попросить создать</string>
+    <string name="show_more">Показать еще</string>
+    <string name="other_lessons">Остальные предметы:</string>
+    <string name="classes">Классы</string>
+    <string name="students">Ученики</string>
+    <string name="schools">Школы</string>
+    <string name="lessons">Предметы</string>
+    <string name="transactions_is_empty">Список транзакций пуст</string>
+    <string name="notification1">Уведомления</string>
+    <string name="No_items_added">Ни один предмет не добавлен</string>
+    <string name="Items_with_SMART_SCORES">Предметы с УМНЫМИ ОЦЕНКАМИ:</string>
+    <string name="march">март</string>
+    <string name="Hold_an_item_to_score">Удерживайте предмет, чтобы начислить оценку</string>
+    <string name="lessons_without_sm">Предметы без УМНЫХ ОЦЕНОК</string>
+    <string name="u_havnt">У вас нет</string>
+    <string name="family_group1">семейной группы</string>
+    <string name="Choose_one_of_the_ways">Выберите один из способов:</string>
+    <string name="Create_your_child_account">Создать аккаунт своего ребенка</string>
+    <string name="Create_an_account_for_your_child_and_he_will_be_in_your_family_group">Создайте аккаунт для своего ребенка и он окажется в Вашей семейной группе.</string>
+    <string name="The_child_already_has_a_Smart_Grades_account">У ребенка уже есть аккаунт Smart Grades</string>
+    <string name="Search_for_your_childs_account_and_send_an_invitation_to_add">Найдите в поиске аккаунт своего ребенка и отправьте приглашение на добавление.</string>
+    <string name="I_sponsor_now">Я спонсирую сейчас:</string>
+    <string name="add_sponsoring">+ добавить спонсируемого</string>
+    <string name="sponsoring_history">История моего спонсорства:</string>
+    <string name="sponsoring_history_empty">История спонсорства пуста</string>
+    <string name="change_account">Смена учетной записи</string>
+    <string name="accept_relogin">Вы действительно хотите сменить учетную запись на</string>
+    <string name="go_to">Перейти</string>
+    <string name="required_fields">* поля обязательные к заполнению</string>
+    <string name="lesson">Предмет:</string>
+    <string name="Select_from_the_list">Выбрать</string>
+    <string name="add_lesson">Добавить предмет</string>
+    <string name="get_from_list">Выбрать из списка</string>
+    <string name="lesson_name">Название предмета</string>
+    <string name="enter_lesson_name">Введите название предмета</string>
+    <string name="accept">Принять</string>
+    <string name="enter_code_for_application">Введите код для принятия заявки</string>
+    <string name="ok">Ok</string>
+    <string name="group_message">Групповое сообщение</string>
+    <string name="enter_message">Введите сообщение</string>
+    <string name="delete_contact_from_fg">Удалить контакт из семейной группы?</string>
+    <string name="delete">Удалить</string>
+    <string name="school_name">Название школы</string>
+    <string name="access_code">Код подтверждения</string>
+    <string name="add_class">Добавить класс</string>
+    <string name="class_name">Название класса*</string>
+    <string name="add_table">Добавить столбец</string>
+    <string name="second_name_star">Фамилия*</string>
+    <string name="first_name_star">Имя*</string>
+    <string name="avatar_plus_n">Аватар +</string>
+    <string name="delete_class">Удаление класса</string>
+    <string name="delete_class_minus">Удалить класс -</string>
+    <string name="sponsorship_conditions_have_been_met">Поздравляем! Условия по спонсорству исполнены.</string>
+    <string name="cool">Круто</string>
+    <string name="The_device_is_locked">Устройство заблокировано.</string>
+    <string name="It_is_necessary_to_replenish_the_Current_account">Необходимо пополнить Текущий счет.</string>
+    <string name="log_out_of_your_account">Вы действительно хотите выйти из аккаунта?</string>
+    <string name="logout">Выйти</string>
+    <string name="group_name">Название группы</string>
+    <string name="no_more_40_char">не более 40 символов</string>
+    <string name="lesson_mentor">Предмет (направление) менторства</string>
+    <string name="chouse_from_list">Выбрать из списка</string>
+    <string name="default1">По умолчанию</string>
+    <string name="Set_monthly_Child">Установите месячное ограничение для пополнения счета Ребенком</string>
+    <string name="Current_account">Текущий счет:</string>
+    <string name="set">Установить</string>
+    <string name="Do_you_really_want_go_to_the_selected_account">Вы действительно хотите перейти в выбранный акканут?</string>
+    <string name="choose_sum">Введите сумму</string>
+    <string name="Which_group_to_add_a_new_ward_to">В какую группу добавить нового подопечного?</string>
+    <string name="Indicate_the_reason_for_rejection">Укажите причину отклонения</string>
+    <string name="Contact_me_let_discuss">Свяжитесь со мной, давайте обсудим</string>
+    <string name="Do_not_specify">Не указывать</string>
+    <string name="Accrual_of_Money">Начисление Денег</string>
+    <string name="Accrue">Начислить</string>
+    <string name="Drawing">Рисунок</string>
+    <string name="Delete_photo">Удалить фото</string>
+    <string name="loginUP">ЛОГИН</string>
+    <string name="FIO">ФИО</string>
+    <string name="Select_deposit">Выберите депозит</string>
+    <string name="get40_from2">20-дневный (х2)
+        Получить 4 через 20 дней</string>
+    <string name="get45from4">45-дневный (х4)         Получить 8 через 45 дней</string>
+    <string name="Select_the_group_you_want_to_add">Выберите группу куда хотите добавить...</string>
+    <string name="create_group">Создать группу</string>
+    <string name="Calculation_of_Steps_to_the_goal">Начисление Шагов к цели</string>
+    <string name="How_do_you_want_to_contact">Как вы хотите связаться?</string>
+    <string name="call">Позвонить</string>
+    <string name="Email">Написать на почту</string>
+    <string name="WritetoWhatsApp">Написать в WhatsApp</string>
+    <string name="WriteToTelegram">Написать в Telegram</string>
+    <string name="Accrual_of_Time_Coins">Начисление Временных монет</string>
+    <string name="Child_fine">Штраф ребенку</string>
+    <string name="Taking_off_by_a_child">Снятие ребенком</string>
+    <string name="The_goal_for_which_the_steps_will_be_counted">Цель, для которой будут засчитываться шаги</string>
+    <string name="You_can_change_the_Goal_at_any_time">В любой момент Вы сможете изменить Цель.</string>
+    <string name="The_mentor_will_be_able_to_charge_time_for_a_gadget_for_a_child">Ментор сможет начислять время за гаджетом ребенку:</string>
+    <string name="The_mentor_will_be_able_to_charge_Steps_towards_the_goal_at_a_set_interval">Ментор сможет начислять Шаги к цели в установленном интервале</string>
+    <string name="The_purpose_for_which_steps_will_be_counted">Цель, для которой будут засчитываться шаги</string>
+    <string name="u_can_change_the_Go">В любой момент Вы сможете изменить Цель.</string>
+    <string name="The_mentor_will_be_able_to_charge_temporary_coins_for_a_child">Ментор сможет начислять временные монеты ребенку:</string>
+    <string name="Interaction_tool">Инструмент взаимодействия</string>
+    <string name="Child_interaction_system_settings">Настройки системы взаимодействия с ребенком</string>
+    <string name="You_have_not_selected_any_tool_for_interaction_with_this_child">Вы не выбрали ни одного инструмента для взаимодействия с данным ребенком.</string>
+    <string name="Customize_tools">Настроить инструменты (рекомендуется)</string>
+    <string name="Upload_photo">Загрузить фото</string>
+    <string name="Camera">Камера</string>
+    <string name="Gallery">Галерея</string>
+    <string name="Set_a_grade_in_a_subject">Установить оценку, по предмету</string>
+    <string name="Smart_grade_in_the_subject">Умная оценка по предмету</string>
+    <string name="Select_subject">Выберите предмет</string>
+    <string name="the_list_is_empty">Список пуст</string>
+    <string name="Add_item">Добавить предмет</string>
+    <string name="my_family">Моя семья</string>
+    <string name="parentDot">Родители:</string>
+    <string name="childDot">Дети:</string>
+    <string name="change_Password">Изменение пароля</string>
+    <string name="Enter_your_old_password">Введите старый пароль</string>
+    <string name="Enter_a_new_password">Введите новый пароль</string>
+    <string name="repeat_new_password">Повторите новый пароль</string>
+    <string name="change">Изменить</string>
+    <string name="Adding_sponsored">Добавление спонсируемого</string>
+    <string name="login_caps">ЛОГИН</string>
+    <string name="Sponsorship_conditionsDots">Условия спонсорства:</string>
+    <string name="during_the_week">за неделю</string>
+    <string name="Average_score_is_greater">Средний балл больше</string>
+    <string name="Number_of_ratings_not_less">Количество оценок не менее</string>
+    <string name="Payout_amount_per_week">Сумма выплаты за неделю</string>
+    <string name="Recipient_of_remuneration">Получатель вознаграждения</string>
+    <string name="Contro_subjects">Контрольные предметы:</string>
+    <string name="Select_an_item">Выбрать предмет</string>
+    <string name="You_must_select_at_least_2_subjects">Нужно выбрать как минимум 2 предмета</string>
+    <string name="SEND_AN_APPLICATION">ОТПРАВИТЬ ЗАЯВКУ</string>
+    <string name="Are_you_sure_you_want_to_change_the_application">Вы уверены что хотите изменить заявку?</string>
+    <string name="Refill">Пополнение счета</string>
+    <string name="Current_amount">Текущая сумма:</string>
+    <string name="Top_up">ПОПОЛНИТЬ</string>
+    <string name="want_to_save_the_changes_and_accept_the_modified_application">Сохранить изменения и принять измененную заявку?</string>
+    <string name="region">регион / город / район</string>
+    <string name="enter_school_name">Введите наименование школы</string>
+    <string name="enter_region">Укажите регион / город / район</string>
+    <string name="address">адрес</string>
+    <string name="enter_address">Введите наименование школы</string>
+    <string name="site">Сайт</string>
+    <string name="chose_site">Добавьте основной веб-сайт</string>
+    <string name="enter_number">Добавьте основной номер телефона</string>
+    <string name="email">Эл. почта</string>
+    <string name="add_email">Добавьте основной эл. почту</string>
+    <string name="doc1">свидетельство о гос. регистрации</string>
+    <string name="boss_data">данные руководителя</string>
+    <string name="Last_Name">Фамилия</string>
+    <string name="enter_surname_boss">Введите фамилию руководителя</string>
+    <string name="First_Name">Имя</string>
+    <string name="enter_name_boss">Введите имя руководителя</string>
+    <string name="father_name">Отчество</string>
+    <string name="number">Номер телефона</string>
+    <string name="enter_main_email">Добавьте основной эл. почту</string>
+    <string name="doc2">Паспорт / уд. линости</string>
+    <string name="presenter_name">данные Представителя</string>
+    <string name="enter_last_name">Введите фамилию руководителя</string>
+    <string name="enter_first_name">Введите имя руководителя</string>
+    <string name="enter_father_name">Введите отчество руководителя</string>
+    <string name="enter_main_number">Добавьте основной номер телефона</string>
+    <string name="not_necessary">(необязательно)</string>
+    <string name="skip">пропустить</string>
+    <string name="lesson_with_smart_grades">Предметы с Умными оценками</string>
+    <string name="january">январь</string>
+    <string name="profile_photo">Фото профиля</string>
+    <string name="bind_card">Привязка карты</string>
+    <string name="card_num">Номер карты</string>
+    <string name="name_surname_dis">Имя, фамилия (латинскими буквами, как на карте)</string>
+    <string name="my_cards">Мои карты</string>
+    <string name="plus_card">+ добавить карту</string>
+    <string name="successfully">Успешно</string>
+    <string name="my_balance">Мой баланс</string>
+    <string name="is_your_child">Это Ваш родитель?</string>
+    <string name="Attention_it_is_forbidden_to_add_to_someone_else_parent">Внимание: запрещается добавляться к чужому родителю.</string>
+    <string name="status1">был(а) недавно</string>
+    <string name="Join_a_family_group">Присоединиться в семейную группу</string>
+    <string name="aboutMe">О себе:</string>
+    <string name="loginDot">Логин:</string>
+    <string name="find_my_parent">Поиск своего родителя</string>
+    <string name="my_sponsor">Мой спонсор</string>
+    <string name="week_progress">Прогресс недели:</string>
+    <string name="avg_grade">Средний балл:</string>
+    <string name="grade_sum">Оценок получено:</string>
+    <string name="weeks">Недели:</string>
+    <string name="periods">Периоды:</string>
+    <string name="rewards">Вознаграждение:</string>
+    <string name="lessonsDot">Предметы:</string>
+    <string name="Total_Possible_Reward">Общее возможное вознаграждение:</string>
+    <string name="day_passed">Дней прошло:</string>
+    <string name="week_passed">Недель прошло:</string>
+    <string name="Money_received">Денег получено:</string>
+    <string name="off_smart_grades">Умные оценки отключены</string>
+    <string name="on">Включить</string>
+    <string name="on_smart_grades">Умные оценки включены:</string>
+    <string name="Absent">H</string>
+    <string name="messages">Сообщения</string>
+    <string name="no_messages">Нет сообщений</string>
+    <string name="grade">Оценки</string>
+    <string name="query_empty">Список запросов пуст</string>
+    <string name="messages_empty">Список сообщений пуст</string>
+    <string name="create_child_acc">Создать аккаунт для ребенка</string>
+    <string name="find_child_acc">Найти уже созданный аккаунт</string>
+    <string name="creating_lesson">Создание предмета</string>
+    <string name="choose_from_list">Выбрать из списка</string>
+    <string name="own_variant">Свой вариант</string>
+    <string name="lesson_teacher">Учитель предмета</string>
+    <string name="no_more_4">не более 4</string>
+    <string name="iam">Я</string>
+    <string name="second_parent">Второй родитель</string>
+    <string name="find_and_add_mentor">Найти и добавить учителя</string>
+    <string name="grade_type">Вид оценок</string>
+    <string name="only_one_variant">только 1 вариант</string>
+    <string name="regular_lessons">Обычные оценки</string>
+    <string name="settings_info">Все настройки Вы сможете изменять в любой момент.</string>
+    <string name="common_child_person_family_group">Если Вы занимаетесь воспитанием общего ребенка с этим человеком, то можете создать семейную группу.</string>
+    <string name="Send_request_add">Отправьте заявку на добавление Вас в семейную группу.</string>
+    <string name="Attention_forbidden">Внимание: запрещается создавать семейные группы с аккаунтами посторонних людей.</string>
+    <string name="need_eplenish_balance">Для работы Умных оценок необходимо пополнить баланс</string>
+    <string name="top_up">Пополнить</string>
+    <string name="Balance_replenishment">Пополнение баланса</string>
+    <string name="Card_number">Номер карты</string>
+    <string name="Validity">Срок действия</string>
+    <string name="dd_mm">ММ/ГГ</string>
+    <string name="name_in_lat">Имя, фамилия (латинскими буквами, как на карте)</string>
+    <string name="NAME_SURNAME">ИМЯ ФАМИЛИЯ</string>
+    <string name="save_card">Сохранить эту карту</string>
+    <string name="bind">Привязать</string>
+    <string name="days_3">Деньги сегодня или в течение 3 рабочих дней поступят на карту</string>
+    <string name="go_to_main">На главную</string>
+    <string name="IsYourChild">Это Ваш ребенок?</string>
+    <string name="addChildInfo">Внимание: запрещается добавлять чужого ребенка.</string>
+    <string name="invite_to_fg">Пригласить в семейную группу</string>
+    <string name="bioDot">О себе:</string>
+    <string name="schoolDot">Учеба:</string>
+    <string name="choose_card_for_out">Выберите карту для вывода средств:</string>
+    <string name="plus_add_card">+ добавить карту</string>
+    <string name="choose_mentors">Выберите менторов</string>
+    <string name="workDot">Работа:</string>
+    <string name="choose_card_for_in">Выберите карту для пополнения счета:</string>
+    <string name="addressDot">Адрес:</string>
+    <string name="contactsDot">Контакты:</string>
+    <string name="YourChildInThisSchoolLabel">Ваш ребенок является учеником данной школы</string>
+    <string name="YourChildIsInThisSchoolLabel">Ваш ребенок учится в этой школе?</string>
+    <string name="allowed_school_not_attending">Запрещается добавляться в школу, в которой Ваш ребенок не учится.</string>
+    <string name="add_child">Добавить ребенка</string>
+    <string name="find_child">Поиск своего ребенка</string>
+    <string name="find_fg_owner">Поиск хозяина семейной группы</string>
+    <string name="sg_setting">Настройка Умных оценок</string>
+    <string name="mentor_set_score">Учитель начисляет Балл</string>
+    <string name="child_get_money">Ребенок получает Деньги</string>
+    <string name="off">Выключить</string>
+    <string name="representative_data">данные представителя</string>
+    <string name="enter_father_boss">Введите отчество руководителя</string>
+    <string name="new_mentor">Новый учителя</string>
+    <string name="must_fill">* поля обязательные к заполнению</string>
+    <string name="surname_star">Фамилия*</string>
+    <string name="name_star">Имя*</string>
+    <string name="father_if_exist">Отчество (при наличии)</string>
+    <string name="lesson_star">Предметы*</string>
+    <string name="Class_label">Класс</string>
+    <string name="Complaints_and_suggestions">Жалобы и предложения</string>
+    <string name="You_have_disabled_this_function">У вас выключена данная функция</string>
+    <string name="list_empty">Список запросов пуст</string>
+    <string name="child_statusDot">Статус:</string>
+    <string name="to_sponsoring">Спонсировать</string>
+    <string name="find_sponsoring">Поиск спонсируемого</string>
+    <string name="randomSearchLabel">Вы можете найти через поиск в ручную или</string>
+    <string name="randomSearch">случайный выбор</string>
+    <string name="Set_up_daily_auto_charge">Установите ежедневное автоначисление</string>
+    <string name="my_card">Моя карта</string>
+    <string name="in_block">В блоке</string>
+    <string name="unsubscribe_child">Отписать ребенка</string>
+    <string name="ask_you_to_add_as_parent">просит добавить его в Вашу семейную группу в роли родителя</string>
+    <string name="delete_mentor">Удалить учителя</string>
+    <string name="plus_add_column">+ добавить столбец</string>
+    <string name="no_lessons">Нет предметов</string>
+    <string name="no_mentor">Нет учителей</string>
+    <string name="no_students">Нет учеников</string>
+    <string name="plus_add_class_column">+ добавить класс в этом столбце</string>
+    <string name="Please_add_my_child_account_to_your_school">Прошу добавить в Вашу школу аккаунт моего ребенка -</string>
+    <string name="for_class_minus">в класс -</string>
+    <string name="hint_wanna_type">Подсказка: возможно имелся ввиду:</string>
+    <string name="unite">Объеденить</string>
+    <string name="subject">Предмет</string>
+    <string name="progress">Прогресс</string>
+    <string name="To_create_an_item_with_smart_ratings_link_card">Для создание предмета с умными оценками привяжите карту</string>
+    <string name="rename_card">Переименовать карту</string>
+    <string name="delete_card">Удалить карту</string>
+    <string name="Time_left">Осталось времени:</string>
+    <string name="Enter_the_family_group_code">Введи код семейной группы</string>
+    <string name="Tell_your_child_the_code">Сообщите ребенку код:</string>
+    <string name="Code_validity_time">Время действия кода:</string>
+    <string name="this_is_the_union">- это объединение аккаунтов родителей (от 1 до 2) и детей (от 1 до 5).</string>
+    <string name="Attention_family_budget">Внимание: бюджет семейной группы - ОБЩИЙ! Не добавляйте в семейную группу\nаккаунты посторонних людей.</string>
+    <string name="Specify_the_withdrawal_amount">Укажи сумму вывода средств</string>
+    <string name="day_3_progress">Процесс может занять занять до 3 рабочих дней</string>
+    <string name="You_do_not_have_the_authority_to_rate_this_subject">У Вас нет полномочий ставить оценки по данному предмету.</string>
+    <string name="error">Ошибка!</string>
+    <string name="add_new_mentor">Добавить нового учителя</string>
+    <string name="find_with_login">Поиск по логину или имени</string>
+    <string name="delete_lesson">Удалить предмет</string>
+    <string name="The_subject_is_administered_by_the_school_account">Администратором предмета является аккаунт школы</string>
+    <string name="move">Переместить</string>
+    <string name="choose_column">Выберите столбец</string>
+    <string name="no_more_column">Нет других столбцов</string>
+    <string name="wanna_delete_mentor">Вы действительно хотите удалить учителя</string>
+    <string name="form_this_lesson">из данного предмета?</string>
+    <string name="registration">Регистрация</string>
+    <string name="btn_continue">Продолжить</string>
+    <string name="spent_today">Провел сегодня</string>
+    <string name="coin_interval">Монетный интервал</string>
+    <string name="enter_what_the_child_should_do">Введите, что должен делать ребенок</string>
+    <string name="i_agree">Я согласен</string>
+    <string name="table_name">Название столбца</string>
+    <string name="enroll_fg">Присоединиться к действующей</string>
+    <string name="enroll_exist_fg">Найдите аккаунт хозяина семейной группы и отправьте ему запрос на добавление</string>
+    <string name="topup_account">Пополнить счет</string>
+    <string name="our_money">Наши деньги</string>
+    <string name="my_pocket_money">Мои карманные деньги</string>
+    <string name="fast_access_code">Код быстрого доступа</string>
+    <string name="about_app">О приложении</string>
+    <string name="call_friends">Пригласить друзей</string>
+    <string name="Support_service">Служба поддержки</string>
+    <string name="smart_grades_android_v1_0">Smart Grades (Умные оценки) для Android v1.0</string>
+    <string name="balance">Баланс</string>
+    <string name="grade1">оценка</string>
+    <string name="accept_change_acc">Вы действительно хотите перейти в выбранный акканут?</string>
+    <string name="lessonPic">предмет</string>
+    <string name="you_have_not_fg">У тебя нет семейной группы</string>
+    <string name="no_bio">Нет информации о себе</string>
+    <string name="other_lesson_label">Остальные предметы</string>
+    <string name="smart_grades_label">Предметы с Умными оценками</string>
+    <string name="hide">Скрыть</string>
+    <string name="show_all">Показать все</string>
+    <string name="withdraw">Вывести</string>
+    <string name="wanna_delete_lesson">Вы действительно хотите удалить урок</string>
+    <string name="rename">Переименовать</string>
+    <string name="school2">школа</string>
+    <string name="choose_school">Выберите школу</string>
+    <string name="add_school">Добавить школу</string>
+    <string name="choose_class_from_list">Выберите класс из списка</string>
+    <string name="no_attached_card">У тебя нет привязанных карт</string>
+    <string name="child_balance">Баланс ребёнка</string>
+    <string name="ask_you_to_add_as_child">просит добавить его в Вашу семейную группу в роли ребёнка</string>
+    <string name="sponsorship_application">Заявка на спонсорства</string>
+    <string name="familiarize">Ознакомиться</string>
+    <string name="For_sponsorship_you_need_to_topup_your_account">Для спонсорства вам нужно пополнить свой счет на 42 500 тг</string>
+    <string name="days">дней</string>
+    <string name="total_label">Всего:</string>
+    <string name="try_again">Ошибка, попробуйте еще раз.</string>
+    <string name="successfully_updated">Фото успешно обновлено.</string>
+    <string name="successfully_deleted">Фото успешно удалено.</string>
+    <string name="edit_acc">Редактирование аккаунта</string>
+    <string name="hint1">Например, где работаете, хобби, график работы, достижения, и т.д.</string>
+    <string name="Date_entered_incorrectly">Дата введена неверно</string>
+    <string name="Create_an_account_for_the_school">Регистрация аккаунта для школы</string>
+    <string name="Create_an_account">Регистрация аккаунта</string>
+    <string name="Send_SMS_code">Отправить СМС-код</string>
+    <string name="Enter_your_old_access_code">Введите старый код доступа</string>
+    <string name="Log_off">Выйти</string>
+    <string name="Invalid_code_please_try_again">Неверный код, попробуйте еще раз.</string>
+    <string name="incoming">Входящие</string>
+    <string name="outgoing">Исходящие</string>
+    <string name="Ask_to_enable">Попросить включить</string>
+    <string name="asks_to_add_to_your_child_pupils">просит добавить в ученики Вашего ребенка</string>
+    <string name="You_have_sent_an_application_to_be_added_to_your">Вы отправили заявку на добавление в Вашу семейную группу в качестве ребенка</string>
+    <string name="You_have_submitted_an_application_to_be_added_as_a_teacher_for_your_child">Вы отправили заявку на добавление в качестве учителя для Вашего ребенка</string>
+    <string name="Making_a_complaint">Создание жалобы</string>
+    <string name="Subject_of_the_complaint">Тема жалобы</string>
+    <string name="_50_characters_max">Не более 50 символов</string>
+    <string name="Who_do_you_want_to_file_a_complaint_against">На кого хотите пожаловаться?</string>
+    <string name="only_1_option">только 1 вариант.</string>
+    <string name="to_student">на ученика</string>
+    <string name="to_teacher">на учителя</string>
+    <string name="other">другое</string>
+    <string name="Description_of_the_complaint">Описание жалобы</string>
+    <string name="Confidentiality">Конфиденциальность</string>
+    <string name="Anonymously">Анонимно</string>
+    <string name="Information_about_you_will_be_hidden_for_everyone_Even_for_the_developers_of_this_mobile_app">Информация о Вас будет скрыта для всех. Даже для разработчиков этого мобильного приложения.</string>
+    <string name="open">Открыто</string>
+    <string name="Your_profile_data_will_be_available_to_the_recipients_of_the_complaint">Ваши данные профиля будут доступны получателям жалобы.</string>
+    <string name="Enter_the_name_of_the_person_or_the_name_of_the_item_you_are_complaining_about">Введите имя человека или наименование предмета, на которого жалуетесь</string>
+    <string name="Recipient_of_the_complaint">Получатель жалобы</string>
+    <string name="The_complaint_will_be_forwarded_in_turn">Жалоба будет передаваться по очереди. У каждой очереди будет по 3 дня, чтобы решить проблему.</string>
+    <string name="Intruder_Apprentice">Ученик-нарушитель</string>
+    <string name="Parent_of_the_offending_student">Родитель ученика-нарушителя</string>
+    <string name="Classroom_teacher">Классный руководитель</string>
+    <string name="School_psychologist">Психолог школы</string>
+    <string name="Head_teacher">Директор школы</string>
+    <string name="School_inspector">Инспектор школы</string>
+    <string name="Organization_for_the_Protection_of_the_Rights_of_the_Child">Организация по защите прав ребенка</string>
+    <string name="_1st_stage">1-ая очередь:</string>
+    <string name="_2nd_stage">2-ая очередь:</string>
+    <string name="_3rd_stage">3-ая очередь:</string>
+    <string name="_4th_stage">4-ая очередь:</string>
+    <string name="_5th_stage">5-ая очередь:</string>
+    <string name="_6th_stage">6-ая очередь:</string>
+    <string name="_7th_stage">7-ая очередь:</string>
+    <string name="Drag_and_drop_recipients_of_the_complaint_here">Перетащи сюда получателей жалобы</string>
+    <string name="Complaint">Жалоба</string>
+    <string name="Enter_text">Введите текст</string>
+    <string name="Do_you_really_get_out_of_making_a_complaint">Вы действительно выйти из создания жалобы?</string>
+    <string name="All_completed_information_is_not_saved">Вся заполненная информация не сохранится.</string>
+    <string name="Are_you_sure_you_want_to_submit_a_complaint">Вы действительно хотите отправить жалобу?</string>
+    <string name="Send_a_complaint_only_if_your_problem_is_real_and_prevents_you_from_living_or_studying_in_peace">Отправляйте жалобу только в том случае, если Ваша проблема реальная и мешает Вам спокойно жить или учиться.</string>
+    <string name="Describe_the_problem_you_are_facing_in_more_detail_using_text_and_or_voice_message_and_or_video">Опишите подробнее проблему, с которой столкнулись, с помощью текста и/или голосового сообщения и/или видео</string>
+    <string name="day1">день</string>
+    <string name="day2">дня</string>
+    <string name="day3">дней</string>
+    <string name="Photo_uploaded_successfully">Фото успешно загружено</string>
+    <string name="Enter_the_child_email">Укажите email ребенка</string>
+    <string name="Create_a_login_for_your_child">Придумайте логин ребенку</string>
+    <string name="Create_a_password_for_your_child">Придумайте пароль для ребенка</string>
+    <string name="Enter_your_child_phone_number">Укажите номер телефона ребенка</string>
+    <string name="Please_add_me_as_a_Parent">Прошу добавить меня в качестве Родителя.</string>
+    <string name="An_error_occured_please_try_again_later">Произошла ошибка, попробуйте позже.</string>
+    <string name="What_is_the_name_of_the_child">Как зовут ребенка?</string>
+    <string name="Enter_the_child_name">Введите имя ребенка</string>
+    <string name="Enter_the_child_last_name">Введите фамилию ребенка</string>
+    <string name="Repeat_the_access_code">Повторите код доступа.</string>
+    <string name="Wrong_security_code_Enter_a_new_access_code">Неверный код доступа! Введите новый код доступа.</string>
+    <string name="Indicate_the_date_of_birth_of_the_child">Укажите дату рождения ребенка</string>
+    <string name="Set_your_child_avatar">Установите аватар для ребенка</string>
+    <string name="Proceed">Продолжить</string>
+    <string name="CONTINUE">ПРОДОЛЖИТЬ</string>
+    <string name="asks_him_to_include_Smart_estimates_Now_he_has_no_source_of_income">просит включить ему Умные оценки. Сейчас у него нет ни одного источника дохода.</string>
+    <string name="turn_on">Включить</string>
+    <string name="a_z_0_9">Пароль должен состоять из букв латинского алфавита (A-z), арабских цифр (0-9)</string>
+    <string name="You_received_an_application_from_him_to_add_to_the_family_group">Вы получили от него заявку на добавление в семейную группу.</string>
+    <string name="Invite_to_family_group">Пригласить в семейную группу</string>
+    <string name="ask_to_on_sg_in">просит включить ему Умные оценки в предмете</string>
+    <string name="You_asked_to_enable_Smart_Grades_in_a_subject">Вы попросили включить Умные Оценки в предмете</string>
+    <string name="You_are_asking_to_create_an_item_with_Smart_Grades">Вы просите создать предмет с Умными Оценками</string>
+    <string name="The_code_is_invalid">Код недействителен</string>
+    <string name="You_have_sent_an_application_to_be_added_to_the_family_group_as_a_child">Вы отправили заявку на добавление в семейную группу в качестве ребенка</string>
+    <string name="Family_group">Семейная группа</string>
+    <string name="Notifications">Уведомления</string>
+    <string name="Set_a_reward_for_5">Установите вознаграждение для 5</string>
+    <string name="Investor">Инвестор</string>
+    <string name="I_have_read_and_accept_the_terms_of_use_and_privacy_policy">Я ознакомлен и принимаю <u><font color='#359BDF'>условия использования</font></u> и <u><font color='#359BDF'>политику конфиденциальности</font></u></string>
+    <string name="Teachers_can_only_be_added_for_general_subjects">Учителя можно добавить только для общих предметов</string>
+    <string name="Check_the_connection_and_then_refresh_the_page">Проверьте подключение, а затем обновите страницу</string>
+    <string name="Refresh">Обновить</string>
+    <string name="No_internet_access">Нет доступа к интернету</string>
+    <string name="Congratulations">Поздравляем!</string>
+    <string name="Successful_registration">Успешная регистрация.</string>
+    <string name="Get_Smart_Grade_improve_academic_performance_form_good_habits_manage_your_finances">Получай "Умные оценки", улучшай успеваемость, формируй полезные привычки, управляй своими финансами.</string>
+    <string name="Motivate_your_child_improve_his_academic_performance_form_good_habits">Мотивируйте ребёнка, улучшайте его успеваемость, формируйте полезные привычки.</string>
+    <string name="Family_group_balance">Баланс семейной группы</string>
+    <string name="success_sponsor">Выбирайте в кого хотите инвестировать;<br/>поддерживайте учеников из нуждающихся семей, учеников-инвалидов, отличников;<br/>исправляйте в лучшую сторону учеников с плохой успеваемостью и поведением;<br/>получайте видео-благодарность от детей и родителей.</string>
+    <string name="success_school">Объедините всех учеников и учителей, формируйте классы;<br/>мотивируйте с помощью "Умных оценок";<br/>поддерживайте учеников из нуждающихся семей, учеников-инвалидов и отличников;<br/>исправляйте в лучшую сторону учеников с плохой успеваемостью и поведением.</string>
+    <string name="Specify_the_amount_of_replenishment">Укажи сумму пополнения</string>
+    <string name="Withdraw">Вывести</string>
+    <string name="TopUp">Пополнить</string>
+    <string name="Data_entry_error_please_try_again">Ошибка ввода данных, попробуйте еще раз.</string>
+    <string name="The_amount_is_incorrect">Сумма указана не верно!</string>
+    <string name="Error_please_try_again">Ошибка, попробуйте еще раз.</string>
+    <string name="Card_number_is_not_correct">Номер карты неверный</string>
+    <string name="Error_Failed_to_authenticate">Ошибка: Не удалось пройти аутентификацию</string>
+    <string name="You_do_not_have_sponsored">Сейчас у Вас нет спонсируемых</string>
+    <string name="Start_encouraging_through">Начните поощрять через УМНЫЕ ОЦЕНКИ, мотивируйте ребенка и его семью, повышайте образование всего мира.</string>
+    <string name="To_sponsor">Спонсировать</string>
+    <string name="no_information">Нет данных</string>
+    <string name="Lesson_list_is_empty">Список предметов пуст</string>
+    <string name="Creating_a_sponsorship_application">Создание заявки на спонсорство</string>
+    <string name="Sponsorship_conditions">Условия спонсорства:</string>
+    <string name="Sponsored_Items">Спонсируемые предметы:</string>
+    <string name="You_must_select_at_least_2_lessons">Нужно выбрать как минимум 2 предмета</string>
+    <string name="Sponsorship_application">Заявка на спонсорство</string>
+    <string name="Congratulations_An_agreement_to_invest_in_your_child_has_been_concluded">Поздравляем! <br/>Соглашение инвестирования <br/>в Вашего ребенка заключено.</string>
+    <string name="I_wish_you_success">Вам необходимо выполнить простые условия. Желаю успеха!</string>
+    <string name="cool_cont">Круто! Продолжить!</string>
+    <string name="on_the_lesson">по предмету:</string>
+    <string name="Your_balance">Ваш баланс</string>
+    <string name="Adding_a_child">Добавление ребенка</string>
+    <string name="Create_an_account_for_a_child">Создать аккаунт для ребенка</string>
+    <string name="Find_an_already_created_account">Найти уже созданный аккаунт</string>
+    <string name="official_data_no_abbreviations">(официальные данные, без сокращений)</string>
+    <string name="schoolsDot">Школы:</string>
+    <string name="phoneDot">Телефон:</string>
+    <string name="emailDot">Электронная почта:</string>
+    <string name="LocationDot">Местонахождение:</string>
+    <string name="SurnameDot">Фамилия:</string>
+    <string name="NameDot">Имя:</string>
+    <string name="Surname_and_name">Фамилия и имя</string>
+    <string name="Phone">Телефон</string>
+    <string name="About_me">О себе</string>
+    <string name="name_des">Пожалуйста введите официальные данные без \n\сокращений. Учители и школы смогут найти ребенка\n\и связаться с Вами (только с родителями) для\n\взаимодействия.\n\ \n\Эти данные будут видны всем, кто откроет этот профиль.\n\Вы можете использовать только буквы и дефис.</string>
+    <string name="login_des">Вы можете использовать символы a-z, 0-9 и подчеркивания. Минимальная длина - 3 символа.</string>
+    <string name="phone_des">На Ваш новый номер будет отправлено SMS-сообщение с кодом для подтверждения.</string>
+    <string name="mail_des">На Ваш новый электронный адрес будет отправлена ссылка для подтверждения.</string>
+    <string name="bio_des">Не более 50 символов. \n\ \n\Заполните информацию о ребенке (интересы, хобби, достижения, навыки и т.д.). Эта информация позволит учителям и школам предлагать Вам (только родителям) свои услуги по указанным направлениям.</string>
+    <string name="Email_not_specified">Почта не указана</string>
+    <string name="Enter_your_date_of_birth_and_place_of_residence">Укажите дату рождения и место жительства</string>
+    <string name="Your_town">Ваш город</string>
+    <string name="Amount">Сумма</string>
+    <string name="Select_Bank">Выберите Банк</string>
+    <string name="Topup_amount">Сумма пополнения</string>
+    <string name="January">Январь</string>
+    <string name="February">Февраль</string>
+    <string name="March">Март</string>
+    <string name="April">Апрель</string>
+    <string name="May">Май</string>
+    <string name="June">Июнь</string>
+    <string name="July">Июль</string>
+    <string name="August">Август</string>
+    <string name="September">Сентябрь</string>
+    <string name="October">Октябрь</string>
+    <string name="November">Ноябрь</string>
+    <string name="December">Декабрь</string>
+    <string name="Enter_code_from_SMS">Введите код из SMS</string>
+    <string name="student_list_is_empty">Список студентов пуст</string>
+    <string name="Not_indicated">Не указано</string>
+    <string name="WorkDot">Работа:</string>
+    <string name="No_classes">Нет классов</string>
+    <string name="No_lessons">Нет предметов</string>
+    <string name="Classes_and_subjectsDot">Классы и предметы:</string>
+    <string name="Lessons_of_the_teacher_in_this_schoolDot">Предметы в школе данного учителя:</string>
+    <string name="classDot">Класс:</string>
+    <string name="Activate_account">Активировать аккаунт</string>
+    <string name="Remove_teacher_from_school">Удалить учителя из школы</string>
+    <string name="Add_class_to_teacher">Добавить класс</string>
+    <string name="Add_lesson_to">Добавить предмет в</string>
+    <string name="Are_you_sure_you_want_to_change_the_data">Вы уверены, что хотите изменить данные?</string>
+    <string name="Delete_profile">Удалить профиль</string>
+    <string name="moveTo">Перевести</string>
+    <string name="Duplicate">Дублировать</string>
+    <string name="already_in_class">уже состоит в классе</string>
+    <string name="Move_this_student_to">Перевести этого ученика в</string>
+    <string name="subjects_taught">Преподаваемые предметы</string>
+    <string name="classesDot">Классы:</string>
+    <string name="The_class_list_is_empty">Список классов пуст</string>
+    <string name="School_list_is_empty">Список школ пуст</string>
+    <string name="Remove_student_from_school">Удалить ученика со школы</string>
+    <string name="Are_you_sure_you_want_to_archive_this_student">Вы уверены, что хотите отправить этого учащегося в архив?</string>
+    <string name="Formal">Формальный</string>
+    <string name="formal_des">Этот аккаунт создан Вами. Рекомендуется объединить с реальным аккаунтом ребенка. \n\ \n\Для этого посоветуйте родителям создать аккаунт ребенка в Smart Grades и отправить Вам заявку на объединение аккаунтов (функция добавление школы). После объединения Вами аккаунтов родители смогут отслеживать оценки, посещаемость, домашние задания и смогут мотивировать ребенка с помощью "умных оценок", которые будут ставить Ваши учителя.</string>
+    <string name="Send_to_archive">Отправить в архив</string>
+    <string name="Archive">В архив</string>
+    <string name="Are_you_sure_you_want_to_delete_the_student">Вы уверены что хотите удалить ученика</string>
+    <string name="_class">Класс</string>
+    <string name="about_school_dot">О школе:</string>
+    <string name="schools_is_empty">Список школ пуст</string>
+    <string name="add_students">Добавить ученика</string>
+    <string name="Lessons_taughtDot">Преподаваемые предметы:</string>
+    <string name="address_">Адрес</string>
+    <string name="Adding_a_student_to">Добавление ученика в</string>
+    <string name="Please_wait_until_the_download_is_complete">Пожалуйста дождитесь завершения загрузки</string>
+    <string name="You_child">Вы отправили заявку на добавление в семейную группу в качестве ребёнка</string>
+    <string name="go_home">На главную</string>
+    <string name="You_are_asking_to_add_to_school">Вы просите добавить в школу</string>
+    <string name="Add_teacher_to">Добавление учителя в</string>
+    <string name="Create_a_new_account_for_this_child">Создать новый аккаунт для данного ребенка</string>
+    <string name="to_class_">в класс -</string>
+    <string name="Please_add_my_child_account_to_your_school_">Прошу добавить в Вашу школу аккаунт моего ребенка -</string>
+    <string name="done">Готово</string>
+    <string name="rename_class">Переименовать класс</string>
+    <string name="skip_">Пропустить</string>
+    <string name="not_active">Не активный</string>
+    <string name="Do_not_save">Не сохранять</string>
+    <string name="save_changes">Сохранить изменения?</string>
+    <string name="class_alredy_exist">Класс с таким названием уже существует</string>
+    <string name="Select_lesson">Определите предмет</string>
+    <string name="Select_your_profile_picture">Выберите картинку профиля</string>
+    <string name="More_details">Подробнее</string>
+    <string name="mentor_name">Репетитор / Тренер / Учитель</string>
+</resources>

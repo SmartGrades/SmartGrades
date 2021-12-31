@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvTransactionDate"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="10sp"
+        android:textColor="@color/gray_default"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+        <TextView
+            android:id="@+id/tvAction"
+            android:layout_gravity="center"
+            android:text="@string/cancel"
+            android:textSize="12sp"
+            android:textColor="@color/blue_sea"
+            android:gravity="center"
+            android:minWidth="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+
+
+
+
+
+
+</LinearLayout>

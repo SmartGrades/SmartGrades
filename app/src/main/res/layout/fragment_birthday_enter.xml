@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_background"
+    android:clickable="true"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvBirthdayTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="left"
+            android:text="@string/Enter_your_date_of_birth_and_place_of_residence"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etDay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/white"
+            android:cursorVisible="true"
+            android:gravity="center"
+            android:hint="@string/day"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="@color/white"
+            android:textColorHint="@color/place_holder"
+            android:textCursorDrawable="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/etMonth"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/etMonth"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <EditText
+            android:id="@+id/etMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:backgroundTint="@color/white"
+            android:cursorVisible="true"
+            android:gravity="center"
+            android:hint="@string/month"
+            android:inputType="number"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textColorHint="@color/place_holder"
+            android:textCursorDrawable="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvBirthdayTitle"
+            app:layout_constraintWidth_percent="0.35" />
+
+        <EditText
+            android:id="@+id/etYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/white"
+            android:cursorVisible="true"
+            android:gravity="center"
+            android:hint="@string/year"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/place_holder"
+            android:textCursorDrawable="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/etMonth"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/etMonth"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <EditText
+            android:enabled="false"
+            android:id="@+id/etCity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/white"
+            android:cursorVisible="true"
+            android:gravity="center"
+            android:hint="@string/Your_town"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/place_holder"
+            android:textCursorDrawable="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etMonth" />
+
+        <View
+            android:id="@+id/vCity"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/etCity"
+            app:layout_constraintEnd_toEndOf="@+id/etCity"
+            app:layout_constraintStart_toStartOf="@+id/etCity"
+            app:layout_constraintTop_toTopOf="@+id/etCity"
+            app:layout_constraintVertical_bias="0.502" />
+
+        <ImageView
+            android:id="@+id/ivNext"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/img_right_arrow_uncheck_green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout-v21/birthday_select.xml" value="0.353125" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/activity_auth.xml" value="0.5541666666666667" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/activity_parent.xml" value="0.5541666666666667" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/activity_parent_with_cards.xml" value="0.5541666666666667" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/activity_school.xml" value="0.5541666666666667" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/activity_sponsor_with_cards.xml" value="0.5541666666666667" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/ad_city_list.xml" value="0.5" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/birthday_select.xml" value="0.353125" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/bsd_parent_set_smart_grades.xml" value="0.5541666666666667" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/calendar_view.xml" value="0.353125" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/dialog_interaction_tool_steps_page.xml" value="0.353125" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/f_parent_register_child_profile.xml" value="0.5541666666666667" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/fgmt_register_school_page1.xml" value="0.5541666666666667" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/fragment_auth_success.xml" value="0.353125" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/fragment_birthday_enter.xml" value="0.353125" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/fragment_lesson_info.xml" value="0.353125" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/fragment_parent_birthday.xml" value="0.353125" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/fragment_parent_school_list.xml" value="0.353125" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/fragment_parent_search_parent.xml" value="0.5541666666666667" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/fragment_profile.xml" value="0.5" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/fragment_profile_school.xml" value="0.5541666666666667" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/fragment_register_sign_in.xml" value="0.353125" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/fragment_sponsor_find_child.xml" value="0.5541666666666667" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/fragment_type_select.xml" value="0.353125" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/item_child_other_lessons.xml" value="0.353125" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/item_child_with_avatar.xml" value="0.353125" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/item_grades_list_v2.xml" value="0.5541666666666667" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/item_grades_table.xml" value="0.5541666666666667" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/item_income_invite.xml" value="0.353125" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/item_remove_mentor.xml" value="1.0" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/navigation_body.xml" value="0.67" />
+        <entry key="..\:/work/Projects/smartgrades-unicef/app/src/main/res/layout/pw_remove_mentor.xml" value="0.67" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/drawable/btn_background_blue_dark_rectangle.xml" value="0.35104166666666664" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/drawable/btn_background_blue_rectangle.xml" value="0.35104166666666664" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/drawable/btn_background_white_rectangle.xml" value="0.35104166666666664" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/activity_auth.xml" value="0.5" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/activity_auth_v2.xml" value="0.4192708333333333" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/activity_mentor_v2.xml" value="0.42239583333333336" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/activity_parent_with_cards.xml" value="0.5541666666666667" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/activity_school.xml" value="0.5541666666666667" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/dialog_interaction_tool_steps_toys.xml" value="0.4192708333333333" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/dialog_interaction_tool_temporary_coins_bank.xml" value="0.4192708333333333" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/fgmt_mentor_classess.xml" value="0.5541666666666667" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/fgmt_mentor_students.xml" value="0.42239583333333336" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/fgmt_mentor_students_grades.xml" value="0.5541666666666667" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/fgmt_school_class.xml" value="0.5541666666666667" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/fragment_auth_success.xml" value="0.33489583333333334" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/fragment_mentor_request.xml" value="0.42239583333333336" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/fragment_parent_add_lesson.xml" value="0.42239583333333336" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/fragment_parent_mentor_list.xml" value="0.3328125" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/fragment_parent_smart_grates_setting.xml" value="0.4192708333333333" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/fragment_profile.xml" value="0.75" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/fragment_register_password.xml" value="0.5" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/fragment_register_sign_in.xml" value="0.5439932318104906" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/fragment_school_add_student.xml" value="0.5541666666666667" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/fragment_status_select.xml" value="0.5541666666666667" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/fragment_type_select.xml" value="0.67" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/item_mentor_mini.xml" value="0.42239583333333336" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/item_mentor_students_list_v4.xml" value="0.5541666666666667" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/item_parent_child_add.xml" value="0.5541666666666667" />
+        <entry key="..\:/work/Projects/smartgrades-unicef_new/app/src/main/res/layout/item_parent_mentor_add.xml" value="0.42239583333333336" />
+      </map>
+    </option>
+  </component>
+  <component name="EntryPointsManager">
+    <writeAnnotations>
+      <writeAnnotation name="javax.inject.Inject" />
+    </writeAnnotations>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

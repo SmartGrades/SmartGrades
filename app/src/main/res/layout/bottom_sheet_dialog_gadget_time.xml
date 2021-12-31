@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="Начисление Времени за гаджетом"
+        android:textColor="@color/purple_background"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TimePicker
+            android:id="@+id/timePicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:calendarViewShown="false"
+            android:numbersTextColor="@color/purple_background"
+            android:showDividers="none"
+            android:spinnersShown="true"
+            android:theme="@style/DefaultNumberPickerTheme"
+            android:timePickerMode="spinner" />
+
+        <TextView
+            android:id="@+id/tvPlusOrMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="80dp"
+            android:text="-"
+            android:textColor="@color/purple_background"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/ivPlusOrMinus"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/img_togle_plus_purple" />
+
+        <FrameLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <View
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="top|center_horizontal"
+                android:background="@color/gray_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/gray_line" />
+
+
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Отмена"
+            android:textColor="@color/blue_sea"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/tvAccept"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Ок"
+            android:textColor="@color/blue_sea"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

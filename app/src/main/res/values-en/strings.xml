@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SmartGrades</string>
+
+    <string name="mail_or_phone">email or phone number</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="register">Registration</string>
+    <string name="enter_your_mail">Enter your email</string>
+    <string name="enter_your_phone_number">Enter your phone number</string>
+    <string name="mail">email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="who_is_the_account_created_for">Select the role of the account:</string>
+    <string name="parent">Parent</string>
+    <string name="child">Child</string>
+    <string name="mentor">Mentor</string>
+    <string name="name">First Name</string>
+    <string name="surname">Last Name</string>
+    <string name="enter_name">Enter your first name</string>
+    <string name="enter_surname">Enter your last name</string>
+    <string name="what_is_your_name">What is your name?</string>
+    <string name="set_an_avatar_for_your_account">Select avatar for your account</string>
+    <string name="enter_date_of_birth">Select your birthday date</string>
+    <string name="day">Day</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="create_login">Create a username</string>
+    <string name="enter_login">Enter login</string>
+    <string name="create_password">Pick a password</string>
+    <string name="enter_password">Enter password</string>
+    <string name="create_access">Come up with an access code</string>
+    <string name="add_child_title">Create an account for your child?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="enter_full_name_child">Enter the child\'s first and last name</string>
+    <string name="birthday">Datebirthday</string>
+    <string name="gender">Gender</string>
+    <string name="enter_family_status">Set family statuses</string>
+    <string name="your_status_for_child">WHAT ARE YOU FOR A CHILD?</string>
+    <string name="another_family_member">Other authorized person</string>
+    <string name="set_an_avator_for_your_child">Set an avatar for your child\'s account</string>
+    <string name="hardware_access_title">Granting permissions</string>
+    <string name="account_serach">Account search</string>
+    <string name="enter_child_name">Enter your name</string>
+    <string name="enter_child_surname">Enter your last name</string>
+    <string name="add_child">Add child</string>
+    <string name="kids">Children</string>
+    <string name="mentors">Mentors</string>
+    <string name="add_mentor">Add a mentor</string>
+    <string name="proposal_mentor">Application for interaction with a mentor</string>
+    <string name="not_select">Not chosen</string>
+    <string name="tools_integrate">Interaction tool</string>
+    <string name="tools_interval">Tool interval</string>
+    <string name="target">Purpose</string>
+    <string name="send">Send</string>
+
+
+
+
+
+
+
+
+
+
+
+    <string name="registration">Registration</string>
+    <string name="btn_continue">Continue</string>
+    <string name="exit">Exit</string>
+    <string name="coins">Coins</string>
+    <string name="contracts">Contracts</string>
+    <string name="current_balance">Current balance</string>
+    <string name="spent_today">Spent today</string>
+    <string name="min">min</string>
+    <string name="h">h.</string>
+    <string name="accrual">Accrual</string>
+    <string name="you_not_incremented_coins">You not incremented coins</string>
+    <string name="coin_interval">Coin Interval</string>
+    <string name="coin_one_min">1 (20 minute)</string>
+    <string name="coin_zero_five_min">0,5(10 minute)</string>
+    <string name="more_details">more details...</string>
+    <string name="go_to_signing">Go to signing</string>
+    <string name="new_contract">New contract</string>
+    <string name="contract_execution">You need to fulfill your part of the contract.</string>
+    <string name="preparation_of_contract">Preparation of contract</string>
+    <string name="contract">Contract</string>
+    <string name="select_avatar">Select avatar</string>
+    <string name="enter_child_purpose">Enter child purpose</string>
+    <string name="enter_the_number_of_steps">Enter the number of steps</string>
+    <string name="enter_what_the_child_should_do">Enter what the child should do</string>
+    <string name="contract_signing">Contract signing</string>
+    <string name="congratulations_the_contract_is_concluded">Congratulations! The contract is concluded!</string>
+    <string name="remember_to_help_your_child">Remember to help your child achieve his goal.</string>
+    <string name="try_credit_to_the_child">Try to set off immediately, the child will track his steps to the goal on his device.</string>
+    <string name="to_the_main">To the main</string>
+    <string name="print_contract">Print contract</string>
+    <string name="cancel_contract">Cancel contract</string>
+    <string name="repeat_all_conditions">Repeat all conditions.  If the child agrees, then let him click the appropriate button.</string>
+    <string name="i_agree">I agree</string>
+
+    <string name="status">Status</string>
+    <string name="avatar">Avatar</string>
+    <string name="save">Save</string>
+    <string name="change_status">Change status</string>
+    <string name="father">Father</string>
+    <string name="mother">Mother</string>
+    <string name="daughter">Daughter</string>
+    <string name="son">Son</string>
+    <string name="affordable_time_for_children">Affordable time for children</string>
+    <string name="set_time_limits">Set the time limit, "Night mode" (but no more than 12 hours.)</string>
+    <string name="why_can_i_limit">Why can I limit it to a maximum of 12h a day?</string>
+    <string name="disable_all_day_restrictions">Disable all day restrictions</string>
+    <string name="cancel">Cancel</string>
+    <string name="set_the_interval_for_access">Set the interval for access to devices, but not less than 10h</string>
+    <string name="start">start</string>
+    <string name="end">end</string>
+
+    <string name="current_password">Current password</string>
+    <string name="new_password">New password</string>
+    <string name="new_password_again">New password again</string>
+    <string name="forgotten_password">If you have forgotten your password, you can</string>
+    <string name="drop_him">drop him.</string>
+    <string name="enter_current_password">Enter Current password</string>
+    <string name="enter_new_password">Enter New password</string>
+    <string name="enter_new_password_again">Enter New password again</string>
+    <string name="current_quick_access_code">Current quick access code</string>
+    <string name="new_quick_access_code">New quick access code</string>
+    <string name="new_quick_access_code_again">New quick access code again</string>
+    <string name="enter_current_quick_access_code">Enter current quick access code</string>
+    <string name="enter_new_quick_access_code">Enter new quick access code</string>
+    <string name="enter_new_quick_access_code_again">Enter new quick access code again</string>
+    <string name="sound_notifications">Sound notifications</string>
+    <string name="vibration">Vibration</string>
+    <string name="popup_notifications">Popup notifications</string>
+    <string name="set_the_number_of_coins">Set the number of coins that will be charged automatically</string>
+    <string name="accrual_recommendations">Recommendations for accruals</string>
+    <string name="disable_all_auto_charges_by_day">Disable all auto charges by day</string>
+    <string name="auto_charge_time">Auto Charge Time</string>
+    <string name="change_dot">change...</string>
+    <string name="dialog_title_delete_device">Are you sure you want to remove the devices?</string>
+
+    <string name="device_deleted_permanently">The device will be deleted permanently</string>
+    <string name="devices_cannot_be_restored">Devices cannot be restored</string>
+    <string name="devices_removed">Devices removed</string>
+    <string name="open_access_for">Open access for:</string>
+    <string name="change_user_to">Change user to:</string>
+    <string name="grant_access">Grant access:</string>
+    <string name="close_access_for_all_children">Close access for all children</string>
+    <string name="open_access_for_all_children">Open access for all children</string>
+    <string name="login">Login</string>
+    <string name="device_blocked">Device blocked</string>
+    <string name="coins_ends">Coins ends</string>
+    <string name="parent_to_replenish">You can contact the parent to replenish the balance</string>
+    <string name="no_new_contracts">No new contracts</string>
+    <string name="login_dot">login:</string>
+    <string name="mail_dot">mail:</string>
+
+    <string name="password_dot">password:</string>
+    <string name="name_dot">name:</string>
+    <string name="quiack_access_code_dot">quick access code:</string>
+    <string name="quiack_access_code">Quick access code</string>
+    <string name="select_parent">Select Parent</string>
+
+    <string name="enter_mail">Enter Mail</string>
+
+    <string name="password_must_be_with_six_symbols">Password must be with 6 symbols</string>
+    <string name="enter_quick_access_code">Enter quick access code</string>
+    <string name="quick_access_code_must_be_with_six_numbers">Quick access code must be with 4 numbers</string>
+    <string name="description">Description</string>
+    <string name="we_are_in_social_networks">We are in social networks</string>
+    <string name="select_status_family_member">Select status family member</string>
+    <string name="create">Create</string>
+    <string name="family_member">Family Member</string>
+    <string name="obols_accounting_interval">Coin accounting interval</string>
+
+    <string name="lock_text_one">Are you sure you want to block access for all children on this device?</string>
+    <string name="lock_text_two">Only calls, messages and instant messengers will be available</string>
+    <string name="lock_text_three">You can open access at any time</string>
+    <string name="unlock_text_one">Are you sure you want to enable access for all children on this device?</string>
+    <string name="unlock_text_two">Coin accounting system will be disabled</string>
+    <string name="unlock_text_three">Access can be changed at any time</string>
+    <string name="checked_count_steps_text_one">Are you sure you want to check the box?</string>
+    <string name="checked_count_steps_text_two">A check will be put down</string>
+    <string name="checked_count_steps_text_three">You can uncheck the box at any time.</string>
+    <string name="unchecked_count_steps_text_one">Are you sure you want to uncheck?</string>
+    <string name="unchecked_count_steps_text_two">The checkmark will be removed</string>
+    <string name="unchecked_count_steps_text_three">You can check the box at any time</string>
+    <string name="alert_check_child_parent">Parent and child do not confirm agreement</string>
+    <string name="alert_check_child">The child has not confirmed the agreement under the contract</string>
+    <string name="alert_check_parent">Parent did not confirm agreement</string>
+    <string name="alert_delete_contract_text_one">Are you sure you want to delete the contract?</string>
+    <string name="alert_delete_contract_text_two">The contract cannot be restored</string>
+    <string name="alert_delete_contract_text_three">The contract will be permanently deleted</string>
+    <string name="password_changed">Password changed</string>
+    <string name="the_current_password_is_not_correct">The current password is not correct</string>
+    <string name="new_password_and_confirmation_password_do_not_match">New password and confirmation password do not match</string>
+    <string name="quick_access_code_changed">Quick access code changed</string>
+    <string name="the_current_quick_access_code_is_not_correct">The current quick access code is not correct</string>
+    <string name="new_quick_access_code_and_confirmation_quick_access_code_do_not_match">New quick access code and confirmation quick access code do not match</string>
+    <string name="personal_data_changed">Personal data changed</string>
+    <string name="time_children_dialog_text_one">Are you sure you want to disable this day?</string>
+    <string name="time_children_dialog_text_two">This day will be off</string>
+    <string name="time_children_dialog_text_three">You can turn on time at any time</string>
+    <string name="turn_off">Turn off</string>
+    <string name="auto_charge_coins_dialog_text_one">Are you sure you want to disable auto-charging?</string>
+    <string name="auto_charge_coins_dialog_text_two">Auto charge will be disabled on this day</string>
+    <string name="auto_charge_coins_dialog_text_three">At any time, auto charge can be turned on</string>
+    <string name="auto_charege_coins_time_title">Set time for auto charge</string>
+    <string name="family_room">Family room</string>
+    <string name="hello">hello!</string>
+    <string name="invalid_access_code">Invalid access code</string>
+    <string name="enter_new_device_name">Enter a new name for the phone</string>
+    <string name="to_get_a_permission">To get a permission</string>
+    <string name="goodbye">Goodbye</string>
+    <string name="family_room_dialog_text_one">Do you really want to leave?</string>
+    <string name="family_room_dialog_text_two">You are leaving a family group</string>
+    <string name="family_room_dialog_text_three">You can log in again at any time</string>
+    <string name="fulfills">Fulfills</string>
+    <string name="fulfills_dialog_text_one">Have you really fulfilled your part of the transaction?</string>
+    <string name="fulfills_dialog_text_two">Deal will be confirmed</string>
+    <string name="fulfills_dialog_text_three">At any time, you can cancel the transaction</string>
+    <string name="reports_week_text_one">On average per week spent: </string>
+    <string name="reports_week_text_two">Daily allowance exceeded in</string>
+    <string name="reports_month_text_one">Average spent per month: </string>
+    <string name="obols">Obols</string>
+    <string name="times">times</string>
+    <string name="blocked_app">Application control</string>
+    <string name="default_list_menu">Test</string>
+    <string name="standard_list_menu">Standard</string>
+    <string name="customizable_menu">Customizable</string>
+    <string name="warning">WARNING</string>
+    <string name="device_description">For the application to run successfully in the background, you must do the following:</string>
+    <string name="autostart">Autostart</string>
+    <string name="cabinet">Cabinet</string>
+    <string name="change_range_coins">Change the range of obols</string>
+    <string name="piggy_text">In the piggy bank</string>
+    <string name="bank_text">In the bank</string>
+    <string name="devices">Devices</string>
+    <string name="auto_charge_text">Auto charge</string>
+    <string name="children_time_text">Timing</string>
+    <string name="fecit">Fecit</string>
+    <string name="good_deal_text_one">Congratulations!\nThe contract is executed!</string>
+    <string name="good_deal_text_two">Do not stop there</string>
+    <string name="editing_a_contract">Editing a contract</string>
+    <string name="save_change">Save change</string>
+    <string name="bank">Bank</string>
+    <string name="piggy">Piggy bank</string>
+    <string name="change_daily_rate">Change daily rate</string>
+    <string name="reports_on">Reports on</string>
+    <string name="choose_account_type">Choose account type</string>
+    <string name="password_recovery">Password recovery</string>
+
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="restore">Восстановить</string>
+    <string name="content">Content</string>
+    <string name="calendar">Calendar</string>
+    <string name="add_schoolboy">Add schoolboy</string>
+    <string name="family_members">Family members</string>
+
+
+    <string name="add_family_member">Add family member</string>
+    <string name="search">Search</string>
+
+    <string name="upbringer">Upbringer</string>
+
+    <string name="accrual_of_coins">Accrual of coins</string>
+    <string name="accrual_of_offset">Accrual of offset</string>
+    <string name="prevent_interaction">Prevent interaction</string>
+    <string name="select_checked">Select</string>
+    <string name="selection_of_the_ward">Selection of the ward (wards)</string>
+    <string name="form_of_interaction">Form of interaction</string>
+    <string name="teacher">Teacher</string>
+    <string name="trainer">Trainer</string>
+    <string name="nanny">Nanny</string>
+    <string name="relative">Relative</string>
+    <string name="super_achievement">Super achievement</string>
+    <string name="push_text">Notification to add a ward</string>
+    <string name="add_group">Add group</string>
+    <string name="add_group_dialog_title">Name of the new group</string>
+    <string name="add_group_dialog_warning">no more than 20 characters</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="refuse">Refuse</string>
+    <string name="add">Add</string>
+    <string name="group_selection">Group selection</string>
+    <string name="child_added">Child added to group</string>
+    <string name="you_added_a_ward">You added a ward</string>
+    <string name="you_refused_to_add_a_ward">You refused to add a ward</string>
+
+
+
+
+
+
+
+    <string name="mentor_status">Set mentor status \n
+        (visible only to you)</string>
+
+    <string name="accrual_of_coins_title">Set the interval within which the mentor will be able to accrue obl</string>
+    <string name="accrual_of_offset_title">Set the interval within which the mentor will be able to credit</string>
+
+    <string name="mentor_note_one">Comment on the form (can be changed):</string>
+    <string name="mentor_note_two">Hello! Please add my child as your ward.</string>
+    <string name="mentor_note_three">Message to Mentor</string>
+
+    <string name="mentors_empty">Family Friends (Mentors) -
+        teachers, educators, trainers, relatives, friends and other people,
+        which can also accrue / subtract obols and offsets
+        (control functions are provided by the parent individually).
+        By interacting with mentors, the child will be more
+        involved in the process of its development.
+    </string>
+
+    <string name="no_contracts_title">There are no existing contracts.</string>
+    <string name="no_contracts_text">Tell the parent what you would like to receive -\n
+        your goal. You need to achieve your goal.\n
+        Parent will help you, he will say how\n
+        way you can get it.\n
+    </string>
+
+    <string name="family_group">Family group</string>
+    <string name="add_user">Add user</string>
+
+    <string name="device_group">Device Group</string>
+    <string name="device">Device</string>
+    <string name="user">User</string>
+
+    <string name="reports">Reports</string>
+
+    <string name="settings">Settings</string>
+    <string name="personal_data">Personal data</string>
+
+
+    <string name="time_children">Affordable time for children</string>
+    <string name="auto_charge">Automatic accrual</string>
+    <string name="notification">Notification</string>
+    <string name="change_language">Change language</string>
+    <string name="change_quick_access_code">Change Quick Access Code</string>
+    <string name="change_password">Change Password</string>
+
+
+    <string name="about_application">About application</string>
+
+
+    <string name="recall_comment">Recall/Comment</string>
+
+    <string name="xiaomi_text">Please enable: \n\n
+        Turn off Miui Optimizations on Developer Settings, then Restart the phone. \n
+Settings > Advanced Settings > Battery manager > Power plan is set to Performance \n
+Device Settings > Advanced Settings > Battery Manager > Protected apps – your app needs to be Protected \n
+Device Settings > Apps > your app > Battery > Power-intensive prompt and Keep running after screen off \n
+Settings > Additional Settings > Battery and Performance > Manage apps’ battery usage and here: \n
+1. Switch Power Saving Modes to Off \n
+2. Choose the next options: Saving Power in The Background > Choose apps > select your app > Background Settings > No restrictions</string>
+
+    <string name="app_lock_dialog_msg">At the end of the allotted time (SALVES) for the child,
+        this device will be partially blocked. Choose one of the types of application control: \n
+1) Test (only YouTube and Google Play are blocked) \n
+2) Standard (everything is blocked except calls, SMS and instant messengers) \n
+3) Custom (you yourself manually determine the list of allowed and blocked applications) \n
+You can change these settings at any time.</string>
+
+    <string name="phone_access">Phone access</string>
+    <string name="phone_text">Permission is required to obtain the IMEI of this device and to carry out further monitoring by parents.</string>
+
+    <string name="data_access">Data access</string>
+    <string name="service_killer_permission">You need to give permission for the application</string>
+    <string name="service_killer_text">For the application to work, you must provide access rights to the data.
+        By clicking on the red arrow, you will go to the application settings with access to data.
+        Find the eSparta app there and enable usage tracking for it. Go back to the Application.</string>
+    <string-array name="languages">
+        <item>English</item>
+        <item>Russian</item>
+    </string-array>
+
+
+    <string name="about_app_description">eSparta mobile application is a service for
+        effective interaction of parents and their
+        children. The application has two tools:
+        1) OBOL (time limit
+        The child behind the gadget);
+        2) AGREEMENT (conclusion of contracts between
+        Parent and child).
+        OBOL tool (from ancient Greek
+        ὀβολός - a coin of Ancient Greece) is
+        electronic coin equal to 20 minutes pro
+        driving a child for a gadget. Parent
+        counts as many obolov as it counts
+        adequate for your child. Also obol
+        accrued for the child’s performance
+        ny actions or are deducted in the form of
+        knowledge. The parent decides how to
+        use this tool.
+        CONTRACT tool used
+        to conclude a parent-child contract
+        com Each side must fulfill its
+        obligations. The child must fulfill
+        parent condition, for example, learn 50 but-
+        English words, and the parent must
+        reward the child for doing this
+        tasks, for example, buy a child football
+        ball.
+        So the baby becomes
+        motivated, shapes his goals,
+        monitors the process of achievement,
+        exerts effort and as a result gets what
+        wanted to. And the parent also reaches his
+        goals, because his child fulfills what
+        useful and necessary.
+        Parents should use caution
+        Call these tools,
+        Closely tracking their effects, clearly
+        Assessing the capabilities of not only the child,
+        But their own.
+    </string>
+
+    <string name="about_app_sub_description">When used correctly, the app
+        parents and their children will reach
+        very great results in all directions
+        laziness (sports, art, health, training,
+        education, discipline, financial
+        literacy, negotiation skills, etc.)</string>
+
+    <string-array name="about_contract">
+        <item>Find out what the child would like to receive (Purpose of the child).</item>
+        <item>Set your conditions for the child, what he must do to achieve this goal.</item>
+        <item>Control and track the process of achieving the goal by the child.</item>
+        <item>If the child fulfills the conditions of the contract, fulfill your duty - provide the child with what he deserves.</item>
+        <item>Do not stop there, improve your child’s knowledge and skills, set goals and achieve them!</item>
+    </string-array>
+
+
+    <string-array name="description_contract">
+        <item>For example, a soccer ball, ice cream, a movie trip to the Lion King.</item>
+        <item>The child will see his target on his device.</item>
+        <item>Examples of one step: \n
+            - 15 push ups \n
+            - learn 5 new words in english \n
+            - go to bed at 22.00h and so on...</item>
+        <item>How many steps should a child take to achieve his goal? \n
+            The child will see progress on his device- \n
+            Do not forget to manually count each step.</item>
+    </string-array>
+
+
+    <string-array name="title_contract">
+        <item>Indicate the purpose of the child</item>
+        <item>Set goal avatar</item>
+        <item>Indicate what a child must do to complete one step</item>
+        <item>Enter the number of steps</item>
+    </string-array>
+
+
+    <string-array name="days_of_the_week">
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Th</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
+
+
+    <string-array name="from_to">
+        <item>from</item>
+        <item>to</item>
+    </string-array>
+
+    <string-array name="days_full">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+    <string name="TemporaryСoins">Smart Ratings = Temporary Coins</string>
+    <string name="GadgetTime">Smart grades = Gadget time</string>
+    <string name="Steps">Smart estimates = Steps to the goal</string>
+    <string name="Money">Smart grades = Money</string>
+    <string name="sponsor">Sponsor</string>
+    <string name="school">School</string>
+    <string name="smart_grades">Smart Grades</string>
+    <string name="loading">Loading...</string>
+    <string name="account_registration">Account registration</string>
+    <string name="Invite_added_to_the_family_group">Invite to be added to the family group</string>
+    <string name="avatar_plus_n">Avatar +</string>
+    <string name="ward">Mentee</string>
+    <string name="money_description">Child can earn and spend on their own money that his parents give him or removed for any action.</string>
+    <string name="money_locked_dialog">Are you sure, what do you want to disable Money Tool?</string>
+    <string name="temporary_coins_dialog">Do you really want to turn off Time Coins Tool?</string>
+    <string name="temporary_coins_dialog_2">One coin equals 20 minutes of gadget operation. If you run out of coins, the gadget will blocked. To resume work gadget, the parent from his account can add coins.  We recommend giving coins to your child for any useful actions.</string>
+    <string name="gadget_time_dialog">Are you sure, what do you want to disable   tool Time for a gadget?</string>
+    <string name="steps_dialog">Are you sure, what do you want to disable   tool Steps to the goal?</string>
+    <string name="steps_page_bottom_text">After the child has confirmed the form the tool will become available.</string>
+    <string name="smart_dialog">Are you sure, what do you want to disable   Smart Estimates tool?</string>
+    <string name="my_income_sources">My sources of income:</string>
+    <string name="no_source_of_income">Now there are no sources of income</string>
+    <string name="no_lessens">There are no lessons now</string>
+    <string name="My_parent_already_has_a_Smart_Grades_account">My parent already has a Smart Grades account</string>
+    <string name="Find_my_parent_account">Find my parent\'s account</string>
+    <string name="join">Join</string>
+    <string name="My_parent_does_not_have_a_Smart_Grades_account">My parent does not have a Smart Grades account</string>
+    <string name="today">Today</string>
+    <string name="The_list_of_transactions_empty">The list of transactions is empty</string>
+    <string name="sponsoring">Sponsorship:</string>
+    <string name="week_prog">Progress of the week:</string>
+    <string name="my_lessons">My subjects:</string>
+    <string name="There_are_no_items_now">There are no lessons now</string>
+    <string name="Ask_the_parent_to_create_items">Ask your parents to create lessons. If you turn on Smart Grades and study well, you will receive pocket money.</string>
+    <string name="Ask_to_create">Ask to create</string>
+    <string name="show_more">show more</string>
+    <string name="other_lessons">Other lessons:</string>
+    <string name="classes">Classes</string>
+    <string name="students">Students</string>
+    <string name="schools">Schools</string>
+    <string name="lessons">Lessons</string>
+    <string name="transactions_is_empty">The list of transactions is empty</string>
+    <string name="notification1">Notifications</string>
+    <string name="No_items_added">No lessons added</string>
+    <string name="Items_with_SMART_SCORES">Lessons with SMART GRADES</string>
+    <string name="march">march</string>
+    <string name="Hold_an_item_to_score">Hold to rate</string>
+    <string name="lessons_without_sm">Lessons with out SMART GRADES</string>
+    <string name="u_havnt">You don\'t have</string>
+    <string name="family_group1">family group</string>
+    <string name="Choose_one_of_the_ways">Choose one of the ways:</string>
+    <string name="Create_your_child_account">Create your child\'s account</string>
+    <string name="Create_an_account_for_your_child_and_he_will_be_in_your_family_group">Create an account for your child and he will be in your family group.</string>
+    <string name="The_child_already_has_a_Smart_Grades_account">The child already has a Smart Grades account</string>
+    <string name="Search_for_your_childs_account_and_send_an_invitation_to_add">Search for your child\'s account and send an invitation to add.</string>
+    <string name="I_sponsor_now">I sponsor now:</string>
+    <string name="add_sponsoring">+ add sponsored</string>
+    <string name="sponsoring_history">My sponsorship history:</string>
+    <string name="sponsoring_history_empty">Sponsorship history is empty</string>
+    <string name="change_account">Account change</string>
+    <string name="accept_relogin">Are you sure you want to change your account to</string>
+    <string name="go_to">Go to</string>
+    <string name="required_fields">* required fields</string>
+    <string name="lesson">Lesson:</string>
+    <string name="Select_from_the_list">Select</string>
+    <string name="add_lesson">Add lesson</string>
+    <string name="get_from_list">Select from the list</string>
+    <string name="lesson_name">Lesson nsme</string>
+    <string name="enter_lesson_name">Enter the name of the lesson</string>
+    <string name="accept">Accept</string>
+    <string name="enter_code_for_application">Enter the code to accept the application</string>
+    <string name="ok">Ok</string>
+    <string name="group_message">Group message</string>
+    <string name="enter_message">Enter your message</string>
+    <string name="delete_contact_from_fg">Remove contact from family group?</string>
+    <string name="delete">Delete</string>
+    <string name="school_name">School name</string>
+    <string name="access_code">Confirmation code</string>
+    <string name="add_class">Add class</string>
+    <string name="class_name">Class name *</string>
+    <string name="add_table">Add column</string>
+    <string name="second_name_star">Surname*</string>
+    <string name="first_name_star">Name*</string>
+    <string name="delete_class">Deleting a class</string>
+    <string name="delete_class_minus">Remove class -</string>
+    <string name="sponsorship_conditions_have_been_met">Congratulations! The sponsorship conditions have been met.</string>
+    <string name="cool">Cool</string>
+    <string name="The_device_is_locked">The device is locked.</string>
+    <string name="It_is_necessary_to_replenish_the_Current_account">It is necessary to replenish the Current account.</string>
+    <string name="log_out_of_your_account">Are you sure you want to log out of your account?</string>
+    <string name="logout">Exit</string>
+    <string name="group_name">Group name</string>
+    <string name="no_more_40_char">no more than 40 characters</string>
+    <string name="lesson_mentor">Lesson (direction) of mentoring</string>
+    <string name="chouse_from_list">Select from the list</string>
+    <string name="default1">Default</string>
+    <string name="Set_monthly_Child">Set a monthly top-up limit for your Child</string>
+    <string name="Current_account">Current account:</string>
+    <string name="set">Set</string>
+    <string name="Do_you_really_want_go_to_the_selected_account">Are you sure you want to go to the selected account?</string>
+    <string name="choose_sum">Enter the sum</string>
+    <string name="Which_group_to_add_a_new_ward_to">Which group should I add a new ward to?</string>
+    <string name="Indicate_the_reason_for_rejection">Indicate the reason for rejection</string>
+    <string name="Contact_me_let_discuss">Contact me, let\'s discuss</string>
+    <string name="Do_not_specify">Do not specify</string>
+    <string name="Accrual_of_Money">Accrual of Money</string>
+    <string name="Accrue">Accrue</string>
+    <string name="Drawing">Drawing</string>
+    <string name="Delete_photo">Delete photo</string>
+    <string name="loginUP">LOGIN</string>
+    <string name="FIO">Full name</string>
+    <string name="Select_deposit">Select deposit</string>
+    <string name="get40_from2">20 days (x2)          Get 4 in 20 days</string>
+    <string name="get45from4">45 days (x4) Get 8 after 45 days</string>
+    <string name="Select_the_group_you_want_to_add">Select the group you want to add ...</string>
+    <string name="create_group">To create a group</string>
+    <string name="Calculation_of_Steps_to_the_goal">Calculation of Steps to the goal</string>
+    <string name="How_do_you_want_to_contact">How do you want to contact?</string>
+    <string name="call">Call</string>
+    <string name="Email">Email</string>
+    <string name="WritetoWhatsApp">Write to WhatsApp</string>
+    <string name="WriteToTelegram">Write to Telegram</string>
+    <string name="Accrual_of_Time_Coins">Accrual of Time Coins</string>
+    <string name="Child_fine">Child fine</string>
+    <string name="Taking_off_by_a_child">Taking off by a child</string>
+    <string name="The_goal_for_which_the_steps_will_be_counted">The goal for which the steps will be counted</string>
+    <string name="You_can_change_the_Goal_at_any_time">You can change the Goal at any time.</string>
+    <string name="The_mentor_will_be_able_to_charge_time_for_a_gadget_for_a_child">The mentor will be able to calculate the time for the child\'s gadget:</string>
+    <string name="The_mentor_will_be_able_to_charge_Steps_towards_the_goal_at_a_set_interval">The mentor will be able to calculate Steps to the goal in a set interval</string>
+    <string name="The_purpose_for_which_steps_will_be_counted">The goal for which the steps will be counted</string>
+    <string name="u_can_change_the_Go">You can change the Goal at any time.</string>
+    <string name="The_mentor_will_be_able_to_charge_temporary_coins_for_a_child">The mentor will be able to add temporary coins to the child:</string>
+    <string name="Interaction_tool">Interaction tool</string>
+    <string name="Child_interaction_system_settings">Child interaction system settings</string>
+    <string name="You_have_not_selected_any_tool_for_interaction_with_this_child">You have not selected any tool for interacting with this child.</string>
+    <string name="Customize_tools">Customize Tools (Recommended)</string>
+    <string name="Upload_photo">Upload a photo</string>
+    <string name="Camera">Camera</string>
+    <string name="Gallery">Gallery</string>
+    <string name="Set_a_grade_in_a_subject">Set a grade, in a lesson</string>
+    <string name="Smart_grade_in_the_subject">Smart grade in the lesson</string>
+    <string name="Select_subject">Select lesson</string>
+    <string name="the_list_is_empty">The list is empty</string>
+    <string name="Add_item">Add lesson</string>
+    <string name="my_family">My family</string>
+    <string name="parentDot">Parents:</string>
+    <string name="childDot">Children:</string>
+    <string name="change_Password">Change password</string>
+    <string name="Enter_your_old_password">Enter your old password</string>
+    <string name="Enter_a_new_password">Enter a new password</string>
+    <string name="repeat_new_password">Repeat new password</string>
+    <string name="change">Edit</string>
+    <string name="Adding_sponsored">Adding sponsored</string>
+    <string name="login_caps">LOGIN</string>
+    <string name="Sponsorship_conditionsDots">Sponsorship conditions:</string>
+    <string name="during_the_week">during the week</string>
+    <string name="Average_score_is_greater">Average score is greater</string>
+    <string name="Number_of_ratings_not_less">Number of ratings not less</string>
+    <string name="Payout_amount_per_week">Payout amount per week</string>
+    <string name="Recipient_of_remuneration">Recipient of remuneration</string>
+    <string name="Contro_subjects">Control lesson:</string>
+    <string name="Select_an_item">Select a lesson</string>
+    <string name="You_must_select_at_least_2_subjects">You must select at least 2 lessons</string>
+    <string name="SEND_AN_APPLICATION">SEND AN APPLICATION</string>
+    <string name="Are_you_sure_you_want_to_change_the_application">Are you sure you want to change the application?</string>
+    <string name="Refill">Refill</string>
+    <string name="Current_amount">Current amount:</string>
+    <string name="Top_up">Top up</string>
+    <string name="want_to_save_the_changes_and_accept_the_modified_application">Do you want to save the changes and accept the modified application?</string>
+    <string name="region">region / city / area</string>
+    <string name="enter_school_name">Enter the name of the school</string>
+    <string name="enter_region">Specify region / city / area</string>
+    <string name="address">address</string>
+    <string name="enter_address">Enter the name of the school</string>
+    <string name="site">Website</string>
+    <string name="chose_site">Add your main website</string>
+    <string name="enter_number">Add your main phone number</string>
+    <string name="email">Email</string>
+    <string name="add_email">Add your main email</string>
+    <string name="doc1">certificate of state registration</string>
+    <string name="boss_data">manager\'s data</string>
+    <string name="Last_Name">Surname</string>
+    <string name="enter_surname_boss">Enter the name of the manager</string>
+    <string name="First_Name">Name</string>
+    <string name="enter_name_boss">Enter the name of the manager</string>
+    <string name="father_name">Middle name</string>
+    <string name="number">Phone number</string>
+    <string name="enter_main_email">Add your main email</string>
+    <string name="doc2">Passport / ID personality</string>
+    <string name="presenter_name">Representative\'s details</string>
+    <string name="enter_last_name">Enter the name of the manager</string>
+    <string name="enter_first_name">Enter the name of the manager</string>
+    <string name="enter_father_name">Enter the patronymic of the head</string>
+    <string name="enter_main_number">Add your main phone number</string>
+    <string name="not_necessary">(not necessary)</string>
+    <string name="skip">skip</string>
+    <string name="lesson_with_smart_grades">Lessons with Smart Grades</string>
+    <string name="january">january</string>
+    <string name="profile_photo">Profile photo</string>
+    <string name="bind_card">Card binding</string>
+    <string name="card_num">Card number</string>
+    <string name="name_surname_dis">Name, surname (in Latin letters, as on the card)</string>
+    <string name="my_cards">My cards</string>
+    <string name="plus_card">+ add card</string>
+    <string name="successfully">Successfully</string>
+    <string name="my_balance">My balance</string>
+    <string name="is_your_child">Is this your parent?</string>
+    <string name="Attention_it_is_forbidden_to_add_to_someone_else_parent">Attention: it is forbidden to add to someone else\'s parent.</string>
+    <string name="status1">was recently</string>
+    <string name="Join_a_family_group">Join a family group</string>
+    <string name="aboutMe">Bio:</string>
+    <string name="loginDot">Login:</string>
+    <string name="find_my_parent">Finding your parent</string>
+    <string name="my_sponsor">My sponsor</string>
+    <string name="week_progress">Progress of the week:</string>
+    <string name="avg_grade">Average score:</string>
+    <string name="grade_sum">Estimates received:</string>
+    <string name="weeks">Weeks:</string>
+    <string name="periods">Periods:</string>
+    <string name="rewards">Reward:</string>
+    <string name="lessonsDot">Lessons:</string>
+    <string name="Total_Possible_Reward">Total Possible Reward:</string>
+    <string name="day_passed">Days have passed:</string>
+    <string name="week_passed">Weeks have passed:</string>
+    <string name="Money_received">Money received:</string>
+    <string name="off_smart_grades">Smart grades are disabled</string>
+    <string name="on">Enable</string>
+    <string name="on_smart_grades">Smart grades included:</string>
+    <string name="Absent">N</string>
+    <string name="messages">Messages</string>
+    <string name="no_messages">No messages</string>
+    <string name="grade">Grades</string>
+    <string name="query_empty">Request list is empty</string>
+    <string name="messages_empty">Message list is empty</string>
+    <string name="create_child_acc">Create an account for a child</string>
+    <string name="find_child_acc">Find an already created account</string>
+    <string name="creating_lesson">Crafting a lesson</string>
+    <string name="choose_from_list">Select from the list</string>
+    <string name="own_variant">Your option</string>
+    <string name="lesson_teacher">Subject teacher</string>
+    <string name="no_more_4">no more than 4</string>
+    <string name="iam">I\'am</string>
+    <string name="second_parent">Second parent</string>
+    <string name="find_and_add_mentor">Find and add a teacher</string>
+    <string name="grade_type">Grade type</string>
+    <string name="only_one_variant">only 1 option</string>
+    <string name="regular_lessons">Regular grades</string>
+    <string name="settings_info">You can change all the settings at any time.</string>
+    <string name="common_child_person_family_group">If you are raising a common child with this person, you can create a family group.</string>
+    <string name="Send_request_add">Send a request to add you to the family group.</string>
+    <string name="Attention_forbidden">Attention: it is forbidden to create family groups with accounts of strangers.</string>
+    <string name="need_eplenish_balance">For Smart Grades to work, you need to replenish the balance</string>
+    <string name="top_up">Top up</string>
+    <string name="Balance_replenishment">Balance replenishment</string>
+    <string name="Card_number">Card number</string>
+    <string name="Validity">Validity</string>
+    <string name="dd_mm">MM/YY</string>
+    <string name="name_in_lat">Name, surname (in Latin letters, as on the card)</string>
+    <string name="NAME_SURNAME">NAME SURNAME</string>
+    <string name="save_card">Save this card</string>
+    <string name="bind">Bind</string>
+    <string name="days_3">The money will be credited to the card today or within 3 working days</string>
+    <string name="go_to_main">To the main</string>
+    <string name="IsYourChild">Is this your child?</string>
+    <string name="addChildInfo">Attention: it is forbidden to add someone else\'s child.</string>
+    <string name="invite_to_fg">Invite to family group</string>
+    <string name="bioDot">Bio:</string>
+    <string name="schoolDot">Schools:</string>
+    <string name="choose_card_for_out">Select a card to withdraw funds:</string>
+    <string name="plus_add_card">+ add card</string>
+    <string name="choose_mentors">Select mentors</string>
+    <string name="workDot">Job:</string>
+    <string name="choose_card_for_in">Select a card to replenish your account:</string>
+    <string name="addressDot">Address:</string>
+    <string name="contactsDot">Contacts:</string>
+    <string name="YourChildInThisSchoolLabel">Your child is a student of this school</string>
+    <string name="YourChildIsInThisSchoolLabel">Does your child attend this school?</string>
+    <string name="allowed_school_not_attending">You may not be added to a school your child is not attending.</string>
+    <string name="find_child">Finding your child</string>
+    <string name="find_fg_owner">Finding a family group owner</string>
+    <string name="sg_setting">Configuring Smart Grades</string>
+    <string name="mentor_set_score">The teacher gives points</string>
+    <string name="child_get_money">The child gets the money</string>
+    <string name="off">Turn off</string>
+    <string name="representative_data">representative data</string>
+    <string name="enter_father_boss">Enter the patronymic of the head</string>
+    <string name="new_mentor">New teacher</string>
+    <string name="must_fill">* required fields</string>
+    <string name="surname_star">Surname*</string>
+    <string name="name_star">Name*</string>
+    <string name="father_if_exist">Middle name (if any)</string>
+    <string name="lesson_star">Lessons*</string>
+    <string name="Class_label">Class</string>
+    <string name="Complaints_and_suggestions">Complaints and suggestions</string>
+    <string name="You_have_disabled_this_function">You have disabled this function</string>
+    <string name="list_empty">Request list is empty</string>
+    <string name="child_statusDot">Status:</string>
+    <string name="to_sponsoring">To sponsor</string>
+    <string name="find_sponsoring">Find sponsored</string>
+    <string name="randomSearchLabel">You can find through manual search or</string>
+    <string name="randomSearch">random selection</string>
+    <string name="Set_up_daily_auto_charge">Set up daily auto charge</string>
+    <string name="my_card">My card</string>
+    <string name="in_block">In the block</string>
+    <string name="unsubscribe_child">Unsubscribe child</string>
+    <string name="ask_you_to_add_as_parent">asks to add him to your family group as a parent</string>
+    <string name="delete_mentor">Remove teacher</string>
+    <string name="plus_add_column">+ add column</string>
+    <string name="no_lessons">No lessons</string>
+    <string name="no_mentor">No teachers</string>
+    <string name="no_students">No students</string>
+    <string name="plus_add_class_column">+ add class in this column</string>
+    <string name="Please_add_my_child_account_to_your_school">Please add my child\'s account to your school -</string>
+    <string name="for_class_minus">to class -</string>
+    <string name="hint_wanna_type">Hint: perhaps it meant:</string>
+    <string name="unite">To combine</string>
+    <string name="subject">Lessons</string>
+    <string name="progress">Progress</string>
+    <string name="To_create_an_item_with_smart_ratings_link_card">To create an item with smart ratings, link a card</string>
+    <string name="rename_card">Rename card</string>
+    <string name="delete_card">Delete card</string>
+    <string name="Time_left">Time left:</string>
+    <string name="Enter_the_family_group_code">Enter the family group code</string>
+    <string name="Tell_your_child_the_code">Tell your child the code:</string>
+    <string name="Code_validity_time">Code validity time:</string>
+    <string name="this_is_the_union">is a union of the accounts of parents (from 1 to 2) and children (from 1 to 5).</string>
+    <string name="Attention_family_budget">Attention: the budget of the family group is GENERAL! Do not add to family group accounts of strangers.</string>
+    <string name="Specify_the_withdrawal_amount">Specify the withdrawal amount</string>
+    <string name="day_3_progress">The process may take up to 3 business days</string>
+    <string name="You_do_not_have_the_authority_to_rate_this_subject">You have no authority to rate this subject.</string>
+    <string name="error">Error!</string>
+    <string name="add_new_mentor">Add new teacher</string>
+    <string name="find_with_login">Search by username or name</string>
+    <string name="delete_lesson">Delete lesson</string>
+    <string name="The_subject_is_administered_by_the_school_account">The lessonis administered by the school account</string>
+    <string name="move">Move</string>
+    <string name="choose_column">Select a column</string>
+    <string name="no_more_column">No other columns</string>
+    <string name="wanna_delete_mentor">Are you sure you want to remove the teacher</string>
+    <string name="form_this_lesson">from a given subject?</string>
+    <string name="enroll_fg">Join the existing</string>
+    <string name="enroll_exist_fg">Find the family group owner\'s account and send them a request to add</string>
+    <string name="topup_account">Top up an account</string>
+    <string name="our_money">Our money</string>
+    <string name="my_pocket_money">My pocket money</string>
+    <string name="fast_access_code">Shortcut code</string>
+    <string name="about_app">About app</string>
+    <string name="call_friends">Call friends</string>
+    <string name="Support_service">Support service</string>
+    <string name="smart_grades_android_v1_0">Smart Grades for Android v1.0</string>
+    <string name="balance">Balance</string>
+    <string name="grade1">grade</string>
+    <string name="accept_change_acc">Are you sure you want to go to the selected account?</string>
+    <string name="lessonPic">lesson</string>
+    <string name="you_have_not_fg">You don\'t have a family group</string>
+    <string name="no_bio">No profile information</string>
+    <string name="other_lesson_label">Other lessons</string>
+    <string name="smart_grades_label">Lessons with Smart Grades</string>
+    <string name="hide">Hide</string>
+    <string name="show_all">Show all</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="wanna_delete_lesson">Are you sure you want to delete the lesson</string>
+    <string name="rename">Rename</string>
+    <string name="school2">school</string>
+    <string name="choose_school">Choose school</string>
+    <string name="add_school">Add school</string>
+    <string name="choose_class_from_list">Choose class from list</string>
+    <string name="no_attached_card">You have no cards attached</string>
+    <string name="child_balance">Child balance</string>
+    <string name="ask_you_to_add_as_child">asks to add him to your family group as a child</string>
+    <string name="sponsorship_application">Sponsorship application</string>
+    <string name="familiarize">Familiarize</string>
+    <string name="For_sponsorship_you_need_to_topup_your_account">For sponsorship, you need to top up your account with 42 500 tenge</string>
+    <string name="week">Week</string>
+    <string name="days">days</string>
+    <string name="total_label">Total:</string>
+    <string name="try_again">Error, please try again.</string>
+    <string name="successfully_updated">Photo has been successfully updated.</string>
+    <string name="successfully_deleted">The photo was successfully deleted.</string>
+    <string name="edit_acc">Account editing</string>
+    <string name="hint1">For example, where do you work, hobbies, work schedule, achievements, etc.</string>
+    <string name="Date_entered_incorrectly">Date entered incorrectly</string>
+    <string name="table_name">Column name</string>
+    <string name="day_5">5 days</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="previous">Previous</string>
+    <string name="Create_an_account_for_the_school">Registration an account for the school</string>
+    <string name="Create_an_account">Registration an account</string>
+    <string name="Send_SMS_code">Send SMS code</string>
+    <string name="Enter_your_old_access_code">Enter your old access code</string>
+    <string name="Log_off">Log off</string>
+    <string name="Invalid_code_please_try_again">Invalid code, please try again.</string>
+    <string name="incoming">Incoming</string>
+    <string name="outgoing">Outgoing</string>
+    <string name="Ask_to_enable">Ask to enable</string>
+    <string name="asks_to_add_to_your_child_pupils">asks to add your child as a Student</string>
+    <string name="You_have_sent_an_application_to_be_added_to_your">You have sent an application to be added to your family group as a child</string>
+    <string name="You_have_submitted_an_application_to_be_added_as_a_teacher_for_your_child">You have submitted an application to be added as a teacher for your child</string>
+    <string name="Making_a_complaint">Making a complaint</string>
+    <string name="Subject_of_the_complaint">Subject of the complaint</string>
+    <string name="_50_characters_max">50 characters max.</string>
+    <string name="Who_do_you_want_to_file_a_complaint_against">Who do you want to file a complaint against?</string>
+    <string name="only_1_option">only 1 option.</string>
+    <string name="to_student">student</string>
+    <string name="to_teacher">teacher</string>
+    <string name="other">other</string>
+    <string name="Description_of_the_complaint">Description of the complaint</string>
+    <string name="Confidentiality">Confidentiality</string>
+    <string name="Anonymously">Anonymously</string>
+    <string name="Information_about_you_will_be_hidden_for_everyone_Even_for_the_developers_of_this_mobile_app">Information about you will be hidden for everyone. Even for the developers of this mobile app.</string>
+    <string name="open">Open</string>
+    <string name="Your_profile_data_will_be_available_to_the_recipients_of_the_complaint">Your profile data will be available to the recipients of the complaint.</string>
+    <string name="Enter_the_name_of_the_person_or_the_name_of_the_item_you_are_complaining_about">Enter the name of the person or the name of the item you are complaining about</string>
+    <string name="Recipient_of_the_complaint">Recipient of the complaint</string>
+    <string name="The_complaint_will_be_forwarded_in_turn">The complaint will be forwarded in turn. Each queue will have 3 days to resolve the problem.</string>
+    <string name="Intruder_Apprentice">Intruder Apprentice</string>
+    <string name="Parent_of_the_offending_student">Parent of the offending student</string>
+    <string name="Classroom_teacher">Classroom teacher</string>
+    <string name="School_psychologist">School psychologist</string>
+    <string name="Head_teacher">Head teacher</string>
+    <string name="School_inspector">School inspector</string>
+    <string name="Organization_for_the_Protection_of_the_Rights_of_the_Child">Organization for the Protection of the Rights of the Child</string>
+    <string name="_1st_stage">1st stage:</string>
+    <string name="_2nd_stage">2nd stage:</string>
+    <string name="_3rd_stage">3rd stage:</string>
+    <string name="_4th_stage">4th stage:</string>
+    <string name="_5th_stage">5th stage:</string>
+    <string name="_6th_stage">6th stage:</string>
+    <string name="_7th_stage">7th stage:</string>
+    <string name="Drag_and_drop_recipients_of_the_complaint_here">Drag and drop recipients of the complaint here</string>
+    <string name="Complaint">Complaint</string>
+    <string name="Enter_text">Enter text</string>
+    <string name="Do_you_really_get_out_of_making_a_complaint">Do you really get out of making a complaint?</string>
+    <string name="All_completed_information_is_not_saved">All completed information is not saved.</string>
+    <string name="Are_you_sure_you_want_to_submit_a_complaint">Are you sure you want to submit a complaint?</string>
+    <string name="Send_a_complaint_only_if_your_problem_is_real_and_prevents_you_from_living_or_studying_in_peace">Send a complaint only if your problem is real and prevents you from living or studying in peace.</string>
+    <string name="Describe_the_problem_you_are_facing_in_more_detail_using_text_and_or_voice_message_and_or_video">Describe the problem you are facing in more detail using text and / or voice message and / or video</string>
+    <string name="day1">day</string>
+    <string name="day2">days</string>
+    <string name="day3">days</string>
+    <string name="Photo_uploaded_successfully">Photo uploaded successfully</string>
+    <string name="Enter_the_child_email">Enter the child\'s email</string>
+    <string name="Create_a_login_for_your_child">Create a login for your child</string>
+    <string name="Create_a_password_for_your_child">Create a password for your child</string>
+    <string name="Enter_your_child_phone_number">Enter your child\'s phone number</string>
+    <string name="Please_add_me_as_a_Parent">Please add me as a Parent.</string>
+    <string name="An_error_occured_please_try_again_later">An error occured, please try again later.</string>
+    <string name="What_is_the_name_of_the_child">What is the name of the child?</string>
+    <string name="Enter_the_child_name">Enter the child\'s name</string>
+    <string name="Enter_the_child_last_name">Enter the child\'s last name</string>
+    <string name="Repeat_the_access_code">Repeat the access code.</string>
+    <string name="Wrong_security_code_Enter_a_new_access_code">Wrong security code! Enter a new access code.</string>
+    <string name="Indicate_the_date_of_birth_of_the_child">Indicate the date of birth of the child</string>
+    <string name="Set_your_child_avatar">Set your child\'s avatar</string>
+    <string name="Proceed">Continue</string>
+    <string name="CONTINUE">CONTINUE</string>
+    <string name="asks_him_to_include_Smart_estimates_Now_he_has_no_source_of_income">asks him to include Smart Grades. Now he has no source of income.</string>
+    <string name="turn_on">Turn on</string>
+    <string name="a_z_0_9">Password must consist of letters of the Latin alphabet (A-z), Arabic numbers (0-9)</string>
+    <string name="You_received_an_application_from_him_to_add_to_the_family_group">You received an application from him to add to the family group.</string>
+    <string name="Invite_to_family_group">Invite to family group</string>
+    <string name="ask_to_on_sg_in">asks him to include Smart grades in the lesson</string>
+    <string name="You_asked_to_enable_Smart_Grades_in_a_subject">You asked to enable Smart Grades in a lesson</string>
+    <string name="You_are_asking_to_create_an_item_with_Smart_Grades">You are asking to create a lesson with Smart Grades</string>
+    <string name="The_code_is_invalid">The code is invalid</string>
+    <string name="You_have_sent_an_application_to_be_added_to_the_family_group_as_a_child">You have sent an application to be added to the family group as a child</string>
+    <string name="Family_group">Family group</string>
+    <string name="Notifications">Notifications</string>
+    <string name="Set_a_reward_for_5">Set a reward for 5</string>
+    <string name="Investor">Investor</string>
+    <string name="I_have_read_and_accept_the_terms_of_use_and_privacy_policy">I have read and accept the <u><font color='#359BDF'>terms of use</font></u> and <u><font color='#359BDF'>privacy policy</font></u></string>
+    <string name="Teachers_can_only_be_added_for_general_subjects">Teachers can only be added for general lessons</string>
+    <string name="Check_the_connection_and_then_refresh_the_page">Check the connection and then refresh the page</string>
+    <string name="Refresh">Refresh</string>
+    <string name="No_internet_access">No internet access</string>
+    <string name="Congratulations">Congratulations!</string>
+    <string name="Successful_registration">Successful registration.</string>
+    <string name="Get_Smart_Grade_improve_academic_performance_form_good_habits_manage_your_finances">Get "Smart Grades", improve academic performance, form good habits, manage your finances.</string>
+    <string name="Motivate_your_child_improve_his_academic_performance_form_good_habits">Motivate your child, improve his academic performance, form good habits.</string>
+    <string name="Family_group_balance">Family group balance</string>
+    <string name="success_sponsor">Choose who you want to invest in;<br/>support students from needy families, students with disabilities, excellent students;<br/>correct students with poor performance and behavior for the better;<br/>receive video gratitude from children and parents.</string>
+    <string name="success_school">Unite all students and teachers, form classes;<br/>motivate with "Smart Grades";<br/>support students from needy families, students with disabilities and excellent students;<br/>correct students with poor performance and behavior for the better.</string>
+    <string name="Specify_the_amount_of_replenishment">Specify the amount of replenishment</string>
+    <string name="Withdraw">Withdraw</string>
+    <string name="TopUp">Top up</string>
+    <string name="Data_entry_error_please_try_again">Data entry error, please try again.</string>
+    <string name="The_amount_is_incorrect">The amount is incorrect!</string>
+    <string name="Error_please_try_again">Error, please try again.</string>
+    <string name="Card_number_is_not_correct">Card number is not correct</string>
+    <string name="Error_Failed_to_authenticate">Error: Failed to authenticate</string>
+    <string name="You_do_not_have_sponsored">You do not have sponsored</string>
+    <string name="Start_encouraging_through">Start encouraging through SMART GRADES, motivate the child and his family, and improve the education of the whole world.</string>
+    <string name="To_sponsor">To sponsor</string>
+    <string name="no_information">No information</string>
+    <string name="Lesson_list_is_empty">Lesson list is empty</string>
+    <string name="Creating_a_sponsorship_application">Creating a sponsorship application</string>
+    <string name="Sponsorship_conditions">Sponsorship conditions:</string>
+    <string name="Sponsored_Items">Sponsored lessons:</string>
+    <string name="You_must_select_at_least_2_lessons">You must select at least 2 lessons</string>
+    <string name="Sponsorship_application">Sponsorship application</string>
+    <string name="Congratulations_An_agreement_to_invest_in_your_child_has_been_concluded">Congratulations! <br/>An agreement to invest in your child has been concluded.</string>
+    <string name="I_wish_you_success">You need to fulfill simple conditions. I wish you success!</string>
+    <string name="cool_cont">Cool! Continue!</string>
+    <string name="on_the_lesson">on the lesson:</string>
+    <string name="Your_balance">Your balance</string>
+    <string name="Adding_a_child">Adding a child</string>
+    <string name="Create_an_account_for_a_child">Create an account for a child</string>
+    <string name="Find_an_already_created_account">Find an already created account</string>
+    <string name="official_data_no_abbreviations">(official data, no abbreviations)</string>
+    <string name="schoolsDot">Schools:</string>
+    <string name="phoneDot">Phone:</string>
+    <string name="emailDot">Email:</string>
+    <string name="LocationDot">Location:</string>
+    <string name="SurnameDot">Surname:</string>
+    <string name="NameDot">Name:</string>
+    <string name="Surname_and_name">Surname and name</string>
+    <string name="Phone">Phone</string>
+    <string name="About_me">About me</string>
+    <string name="name_des">Please enter official data without \n\abbreviations. Teachers and schools will be able to locate the child \n\and contact you (parents only) for \n\interaction. \n\ \n\This data will be visible to anyone who opens this profile. \n\You can only use letters and hyphen.</string>
+    <string name="login_des">You can use the characters a-z, 0-9 and underscores. The minimum length is 3 characters.</string>
+    <string name="phone_des">An SMS message with a confirmation code will be sent to your new number.</string>
+    <string name="mail_des">A confirmation link will be sent to your new email address.</string>
+    <string name="bio_des">No more than 50 characters. \n\ \n\Fill in your child\'s information (interests, hobbies, accomplishments, skills, etc.). This information will allow teachers and schools to offer you (parents only) their services in these areas.</string>
+    <string name="Email_not_specified">Email not specified</string>
+    <string name="Enter_your_date_of_birth_and_place_of_residence">Enter your date of birth and place of residence</string>
+    <string name="Your_town">Your town</string>
+    <string name="Amount">Amount</string>
+    <string name="Select_Bank">Select Bank</string>
+    <string name="Topup_amount">Top-up amount</string>
+    <string name="January">January</string>
+    <string name="February">February</string>
+    <string name="March">March</string>
+    <string name="April">April</string>
+    <string name="May">May</string>
+    <string name="June">June</string>
+    <string name="July">July</string>
+    <string name="August">August</string>
+    <string name="September">September</string>
+    <string name="October">October</string>
+    <string name="November">November</string>
+    <string name="December">December</string>
+    <string name="Enter_code_from_SMS">Enter code from SMS</string>
+    <string name="student_list_is_empty">Список студентов пуст</string>
+    <string name="Not_indicated">Not indicated</string>
+    <string name="WorkDot">Work:</string>
+    <string name="No_classes">No classes</string>
+    <string name="No_lessons">No lessons</string>
+    <string name="Classes_and_subjectsDot">Classes and lessons:</string>
+    <string name="Lessons_of_the_teacher_in_this_schoolDot">Lessons of the teacher in this school:</string>
+    <string name="classDot">Class:</string>
+    <string name="Activate_account">Activate account</string>
+    <string name="Remove_teacher_from_school">Remove teacher from school</string>
+    <string name="Add_class_to_teacher">Add class</string>
+    <string name="Add_lesson_to">Add lesson to</string>
+    <string name="Are_you_sure_you_want_to_change_the_data">Are you sure you want to change the data?</string>
+    <string name="Delete_profile">Delete profile</string>
+    <string name="moveTo">Move</string>
+    <string name="Duplicate">Duplicate</string>
+    <string name="already_in_class">already in class</string>
+    <string name="Move_this_student_to">Move this student to</string>
+    <string name="subjects_taught">Subjects Taught</string>
+    <string name="classesDot">Classes:</string>
+    <string name="The_class_list_is_empty">The class list is empty</string>
+    <string name="School_list_is_empty">School list is empty</string>
+    <string name="Remove_student_from_school">Remove student from school</string>
+    <string name="Are_you_sure_you_want_to_archive_this_student">Are you sure you want to archive this student?</string>
+    <string name="Formal">Formal</string>
+    <string name="formal_des">This account was created by you. It is recommended to combine it with the child\'\s real account. \n\ \n\To do this, advise the parents to create a child\'s account in Smart Grades and send you an application for merging accounts (function of adding a school). After you merge your accounts, parents will be able to track grades, attendance, homework, and can motivate their child with "smart grades" that your teachers will put.</string>
+    <string name="Send_to_archive">Send to archive</string>
+    <string name="Archive">Archive</string>
+    <string name="Are_you_sure_you_want_to_delete_the_student">Are you sure you want to delete the student</string>
+    <string name="_class">Class</string>
+    <string name="about_school_dot">About school:</string>
+    <string name="schools_is_empty">Список школ пуст</string>
+    <string name="add_students">Add Student</string>
+    <string name="Lessons_taughtDot">Lessons taught:</string>
+    <string name="address_">Address</string>
+    <string name="Adding_a_student_to">Adding a student to</string>
+    <string name="Please_wait_until_the_download_is_complete">Please wait until the download is complete</string>
+    <string name="You_child">You have sent an application to be added to the family group as a child</string>
+    <string name="go_home">Go home</string>
+    <string name="You_are_asking_to_add_to_school">You are asking to add to school</string>
+    <string name="Add_teacher_to">Add teacher to</string>
+    <string name="Create_a_new_account_for_this_child">Create a new account for this child</string>
+    <string name="to_class_">to class -</string>
+    <string name="Please_add_my_child_account_to_your_school_">Please add my child\'s account to your school -</string>
+    <string name="done">Done</string>
+    <string name="rename_class">Rename class</string>
+    <string name="skip_">Skip</string>
+    <string name="not_active">not active</string>
+    <string name="Do_not_save">Do not save</string>
+    <string name="save_changes">Save changes?</string>
+    <string name="class_alredy_exist">A class with the same name already exists</string>
+    <string name="Select_lesson">Select lesson</string>
+    <string name="Select_your_profile_picture">Select your profile picture</string>
+    <string name="More_details">More details</string>
+    <string name="mentor_name">Репетитор / Тренер / Учитель</string>
+</resources>

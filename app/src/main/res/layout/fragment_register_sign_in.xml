@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:animateLayoutChanges="true"
+    android:clickable="true"
+    android:fillViewport="true"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Smart Grades"
+            android:textColor="@color/blue_sea"
+            app:layout_constraintBottom_toTopOf="@+id/ivLogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/img_logo_v2"
+            app:layout_constraintBottom_toTopOf="@+id/cvPhoneOrMail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvPhoneOrMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            app:cardBackgroundColor="@color/fgmt_mentor_students_grades"
+            app:cardCornerRadius="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/cvPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivLogo">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clPhoneOrMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivPhoneOrMailLogo"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/img_phone_or_mail_logo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvPhoneOrMail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/mail_or_phone"
+                    android:textSize="8sp"
+                    app:layout_constraintBottom_toTopOf="@+id/etPhoneOrMail"
+                    app:layout_constraintStart_toEndOf="@+id/ivPhoneOrMailLogo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <EditText
+                    android:id="@+id/etPhoneOrMail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tvPhoneOrMail"
+                    app:layout_constraintTop_toBottomOf="@+id/tvPhoneOrMail" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            app:cardBackgroundColor="@color/fgmt_mentor_students_grades"
+            app:cardCornerRadius="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnSignIn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvPhoneOrMail">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivPassword"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/img_password_logo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivPasswordShow"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/img_password_hide"
+                    app:layout_constraintBottom_toBottomOf="@+id/etPassword"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/etPassword" />
+
+                <TextView
+                    android:id="@+id/tvPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/password"
+                    android:textSize="8sp"
+                    app:layout_constraintBottom_toTopOf="@+id/etPassword"
+                    app:layout_constraintStart_toEndOf="@+id/ivPassword"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/ivPasswordShow"
+                    app:layout_constraintStart_toStartOf="@+id/tvPassword"
+                    app:layout_constraintTop_toBottomOf="@+id/tvPassword" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_background_blue_rectangle"
+            android:text="@string/sign_in"
+            android:enabled="false"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/tvForgotPassword"
+            app:layout_constraintEnd_toEndOf="@+id/cvPassword"
+            app:layout_constraintStart_toStartOf="@+id/cvPassword"
+            app:layout_constraintTop_toBottomOf="@+id/cvPassword" />
+
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/forgot_password"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/tvIsNotAccount"
+            app:layout_constraintEnd_toStartOf="@+id/tvForgotPasswordClick"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSignIn" />
+
+        <TextView
+            android:id="@+id/tvForgotPasswordClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Восстановить"
+            android:textColor="@color/blue_dark"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvForgotPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvForgotPassword"
+            app:layout_constraintTop_toTopOf="@+id/tvForgotPassword" />
+
+        <TextView
+            android:id="@+id/tvIsNotAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Нет аккаунта?"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvRegistration"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvForgotPassword" />
+
+        <TextView
+            android:id="@+id/tvRegistration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/register"
+            android:textColor="@color/blue_dark"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvIsNotAccount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvIsNotAccount"
+            app:layout_constraintTop_toTopOf="@+id/tvIsNotAccount" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

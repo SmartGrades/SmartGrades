@@ -1,0 +1,16 @@
+e_sparta_app.jks
+
+password: molly777
+key0
+password: firgo555
+
+25yers
+First and Last Name: Zhaslan H
+Organizational Unit: Application Development
+
+Organization: eSparta
+City or Locality: Astana
+State or Province: Astana
+Country: Kazakhstan
+Zhaslan Tukenov
+@Zhaslan777 eSparta777

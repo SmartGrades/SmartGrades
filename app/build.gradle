@@ -1,0 +1,164 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+// Apply the Crashlytics Gradle plugin
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "kz.tech.smartgrades"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    defaultConfig {
+        multiDexEnabled true
+    }
+}
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+ext {
+    supportLibrary = "27.0.2"
+}
+dependencies {
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation "androidx.drawerlayout:drawerlayout:1.1.1"
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.material:material:1.2.1'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-media-compat:28.0.0'
+
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    //Test
+
+    implementation 'androidx.navigation:navigation-fragment:2.3.1'
+    implementation 'androidx.navigation:navigation-ui:2.3.1'
+    implementation 'com.google.firebase:firebase-messaging:20.3.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'com.android.volley:volley:1.1.1'
+    //Picture Load
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+
+    //RxJava 2
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.9'
+
+    //Retrofit 2
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    //Retrofit 2 + RxJava 2
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.5.0'
+
+    //Room
+    def roomVer = "1.1.1"
+    implementation "android.arch.persistence.room:runtime:$roomVer"
+    annotationProcessor "android.arch.persistence.room:compiler:$roomVer"
+    //Room + RxJava 2
+    implementation "android.arch.persistence.room:rxjava2:$roomVer"
+
+    //Dagger 2
+    def daggerVer = "2.35.1"
+    implementation "com.google.dagger:dagger:$daggerVer"
+    implementation "com.google.dagger:dagger-android-support:$daggerVer"
+    implementation "com.google.dagger:dagger-android:$daggerVer"
+    annotationProcessor "com.google.dagger:dagger-android-processor:$daggerVer"
+    annotationProcessor "com.google.dagger:dagger-compiler:$daggerVer"
+
+    //FireBasePath
+    def fireBaseVer = "19.0.0"
+    implementation "com.google.firebase:firebase-database:$fireBaseVer"
+    implementation "com.google.firebase:firebase-storage:$fireBaseVer"
+
+    implementation 'com.firebase:firebase-jobdispatcher:0.8.6'
+
+    def work_version = "2.3.0-alpha03"
+    // (Java only)
+    implementation "androidx.work:work-runtime:$work_version"
+    // Kotlin + coroutines
+    //implementation "androidx.work:work-runtime-ktx:$work_version"
+
+    // optional - RxJava2 support
+    implementation "androidx.work:work-rxjava2:$work_version"
+    // optional - Test helpers
+    // androidTestImplementation "androidx.work:work-testing:$work_version"
+    // implementation "android.arch.work:work-runtime:1.0.0-alpha02"
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    implementation "javax.mail:javax.mail-api:1.6.2"
+
+
+    // Add the Firebase Crashlytics dependency.
+    //implementation 'com.crashlytics.sdk.android:crashlytics:17.2.2'
+
+    // Add the Firebase SDK for Crashlytics.
+    implementation 'com.google.firebase:firebase-crashlytics:17.2.2'
+
+    implementation("com.squareup.okhttp3:okhttp:4.8.0")
+
+    implementation 'com.orhanobut:dialogplus:1.11@aar'
+
+    implementation 'com.google.firebase:firebase-analytics:18.0.2'
+
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+
+    implementation 'com.github.imangazalievm:circlemenu:3.0.0'
+
+    implementation 'ru.cloudpayments.android:sdk:1.0.8'
+
+    implementation "com.android.support:design:${supportLibrary}"
+
+    implementation "androidx.multidex:multidex:2.0.1"
+
+    implementation 'com.yarolegovich:discrete-scrollview:1.5.1'
+    implementation 'com.github.omadahealth:swipy:1.2.3@aar'
+
+    implementation 'org.bouncycastle:bcpkix-jdk15on:1.63'
+
+//    implementation "androidx.security:security-crypto:1.1.0-alpha03"
+
+    // For Identity Credential APIs
+//    implementation "androidx.security:security-identity-credential:1.0.0-alpha02"
+
+    implementation 'com.google.android.material:material:1.3.0'
+
+    implementation 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:3.0.0-RC1'
+
+    implementation 'com.github.yalantis:ucrop:2.2.6'
+
+    implementation 'com.google.android:flexbox:2.0.1'
+}

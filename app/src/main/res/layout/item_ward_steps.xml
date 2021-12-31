@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="70dp">
+
+    <ImageView
+        android:id="@+id/ivSteps"
+        android:src="@drawable/img_step_zero"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvSteps"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/gray_default"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/SortChangePopup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/img_arrow_left_native"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Новый ученик"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivBack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivBack" />
+
+        <FrameLayout
+            android:id="@+id/flAddAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivBack">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civAvatar"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:src="@color/white"
+                app:civ_border_color="@color/gray_average_dark"
+                app:civ_border_width="2dp" />
+
+            <ProgressBar
+                android:id="@+id/pgAvatarUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="* поля обязательные к заполнению"
+            android:textColor="@color/gray_default"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toTopOf="@+id/etLastName"
+            app:layout_constraintEnd_toEndOf="@+id/etLastName" />
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_text_style_v2"
+            android:enabled="false"
+            android:hint="Фамилия*"
+            android:padding="3dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/flAddAvatar" />
+
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_text_style_v2"
+            android:enabled="false"
+            android:hint="Имя*"
+            android:padding="3dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/etLastName"
+            app:layout_constraintStart_toStartOf="@+id/etLastName"
+            app:layout_constraintTop_toBottomOf="@+id/etLastName" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clLessons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_text_style_v2"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/clClasses"
+            app:layout_constraintStart_toStartOf="@+id/clClasses"
+            app:layout_constraintTop_toBottomOf="@+id/clClasses">
+
+            <TextView
+                android:id="@+id/tvLessonLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:hint="Предмет*"
+                android:visibility="visible"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivAddLesson"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/img_add_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvLessonLabel" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSelectLessonsList"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/ivAddLesson"
+                app:layout_constraintHeight_min="30dp"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintRight_toLeftOf="@+id/ivAddLesson"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvSelectLessonsList">
+
+                <ImageView
+                    android:id="@+id/ivSearch"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/img_search_purple"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/etSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="Поиск"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivSearch"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@+id/ivSearch"
+                    app:layout_constraintTop_toTopOf="@+id/ivSearch" />
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/purple_background"
+                    app:layout_constraintBottom_toBottomOf="@+id/etSearch"
+                    app:layout_constraintEnd_toEndOf="@+id/etSearch"
+                    app:layout_constraintStart_toStartOf="@+id/etSearch" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvLessonList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clClasses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_text_style_v2"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/etFirstName"
+            app:layout_constraintStart_toStartOf="@+id/etFirstName"
+            app:layout_constraintTop_toBottomOf="@+id/etFirstName">
+
+            <TextView
+                android:id="@+id/tvClassLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Класс*"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/ivAddClass"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ivAddClass" />
+
+            <ImageView
+                android:id="@+id/ivAddClass"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/img_add_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvAddNewClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Создать новый"
+                android:textColor="@color/blue_sea"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/tvClassLabel"
+                app:layout_constraintTop_toBottomOf="@+id/tvClassLabel" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvClassList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/tvAddNewClass"
+                tools:layout_editor_absoluteX="5dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tvAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:enabled="false"
+            android:padding="5dp"
+            android:text="Добавить"
+            android:textColor="@color/gray_default"
+            android:textSize="14sp"
+            app:layout_constraintRight_toRightOf="@+id/clClasses"
+            app:layout_constraintTop_toBottomOf="@+id/clLessons" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

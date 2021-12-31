@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_marginTop="10dp"
+        android:text="@string/You_have_not_selected_any_tool_for_interaction_with_this_child"
+        android:textColor="@color/purple_background"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/tvSettingTools"
+        android:text="@string/Customize_tools"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/blue_sea"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

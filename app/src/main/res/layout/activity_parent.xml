@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clDefaultContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/purple_background"
+            android:contentInsetStart="0dp"
+            android:contentInsetLeft="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivNav"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/img_nav_menu" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="60dp"
+                    android:src="@drawable/logo" />
+
+                <ImageView
+                    android:id="@+id/ivSearch"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="70dp"
+                    android:src="@drawable/img_search_white"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvCurentCash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="left"
+                    android:text="0 KZT"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civAvatar"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10dp"
+                    android:focusable="true" />
+
+            </FrameLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clChildInfo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civSponsorshipChildAvatar0"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivNotification0"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/img_parent_child_notification"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/civSponsorshipChildAvatar0"
+                    app:layout_constraintEnd_toEndOf="@+id/civSponsorshipChildAvatar0" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civSponsorshipChildAvatar1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/civSponsorshipChildAvatar0"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivNotification1"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/img_parent_child_notification"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/civSponsorshipChildAvatar1"
+                    app:layout_constraintEnd_toEndOf="@+id/civSponsorshipChildAvatar1" />
+
+                <TextView
+                    android:id="@+id/tvSponsorshipArrowLeft"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/img_left_arrow_purple"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/civSponsorshipChildAvatar"
+                    app:layout_constraintEnd_toStartOf="@+id/tvSponsorshipAverageGrade"
+                    app:layout_constraintTop_toTopOf="@+id/civSponsorshipChildAvatar" />
+
+                <TextView
+                    android:id="@+id/tvSponsorshipAverageGrade"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/background_oval_gray"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/civSponsorshipChildAvatar"
+                    app:layout_constraintEnd_toStartOf="@+id/civSponsorshipChildAvatar"
+                    app:layout_constraintTop_toTopOf="@+id/civSponsorshipChildAvatar" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civSponsorshipChildAvatar"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.46"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvSponsorshipSum"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/background_square_green"
+                    android:gravity="center"
+                    android:text="0 KZT"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/civSponsorshipChildAvatar"
+                    app:layout_constraintStart_toEndOf="@+id/civSponsorshipChildAvatar"
+                    app:layout_constraintTop_toTopOf="@+id/civSponsorshipChildAvatar" />
+
+                <TextView
+                    android:id="@+id/tvSponsorshipArrowRight"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/img_right_arrow_purple"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tvSponsorshipSum"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civSponsorshipChildAvatar2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/civSponsorshipChildAvatar3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivNotification2"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/img_parent_child_notification"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/civSponsorshipChildAvatar2"
+                    app:layout_constraintEnd_toEndOf="@+id/civSponsorshipChildAvatar2" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civSponsorshipChildAvatar3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivNotification3"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/img_parent_child_notification"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/civSponsorshipChildAvatar3"
+                    app:layout_constraintEnd_toEndOf="@+id/civSponsorshipChildAvatar3" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray_line"
+                    app:layout_constraintBottom_toBottomOf="@+id/clChildInfo" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clSponsorData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clChildInfo">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civSponsorAvatar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivStateWeek1"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/background_oval_gray"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView4"
+                    app:layout_constraintStart_toEndOf="@+id/textView4"
+                    app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+                <ImageView
+                    android:id="@+id/ivStateWeek2"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/background_oval_gray"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivStateWeek1"
+                    app:layout_constraintStart_toEndOf="@+id/ivStateWeek1"
+                    app:layout_constraintTop_toTopOf="@+id/ivStateWeek1" />
+
+                <ImageView
+                    android:id="@+id/ivStateWeek3"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/background_oval_gray"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivStateWeek2"
+                    app:layout_constraintStart_toEndOf="@+id/ivStateWeek2"
+                    app:layout_constraintTop_toTopOf="@+id/ivStateWeek2" />
+
+                <ImageView
+                    android:id="@+id/ivStateWeek4"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/background_oval_gray"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivStateWeek3"
+                    app:layout_constraintStart_toEndOf="@+id/ivStateWeek3"
+                    app:layout_constraintTop_toTopOf="@+id/ivStateWeek3" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Дней осталось: "
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Спонсорство"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/civSponsorAvatar"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvDaysLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/textView3"
+                    app:layout_constraintTop_toTopOf="@+id/textView" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Оценок осталось: "
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <TextView
+                    android:id="@+id/tvGradesLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="@+id/tvDaysLeft"
+                    app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Пороговый балл: "
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView3"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                <TextView
+                    android:id="@+id/tvThresholdGrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="@+id/tvGradesLeft"
+                    app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+                <TextView
+                    android:id="@+id/tvAverageGrade"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/background_oval_gray"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="@+id/civSponsorAvatar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/civSponsorAvatar" />
+
+                <ImageView
+                    android:id="@+id/ivExtraMenu"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/img_extra_menu"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvAverageGrade"
+                    app:layout_constraintEnd_toStartOf="@+id/tvAverageGrade"
+                    app:layout_constraintTop_toTopOf="@+id/tvAverageGrade" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/gray_line"
+                    app:layout_constraintBottom_toBottomOf="@+id/clSponsorData" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvContactsList"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clSponsorData" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civAddContact"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/img_parent_add_contact"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <FrameLayout
+                android:id="@+id/flChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:layout_constraintBottom_toTopOf="@+id/civAddContact"
+                app:layout_constraintEnd_toEndOf="@+id/civAddContact"
+                app:layout_constraintStart_toStartOf="@+id/civAddContact">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/img_chat" />
+
+                <TextView
+                    android:id="@+id/tvNoCheckCount"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/background_no_check_count"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civSendMoney"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/img_parent_send_money"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/civAddContact"
+                app:layout_constraintEnd_toStartOf="@+id/civAddContact"
+                app:layout_constraintTop_toTopOf="@+id/civAddContact" />
+
+            <LinearLayout
+                android:id="@+id/llAddChild"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/civAddContact"
+                app:layout_constraintEnd_toEndOf="@+id/civAddContact">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/view_circle_white_border_white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:text="Добавить Ребенка"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+                </FrameLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/img_add_child_active" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAddMentor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/llAddChild"
+                app:layout_constraintEnd_toEndOf="@+id/llAddChild">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/view_circle_white_border_white">
+
+                    <TextView
+                        android:id="@+id/tvAddMentor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:text="Добавить Ментора"
+                        android:textColor="@color/gray_default"
+                        android:textSize="13dp" />
+                </FrameLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civAddMentor"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/img_add_mentor_not_active" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSearchSponsor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/llAddMentor"
+                app:layout_constraintEnd_toEndOf="@+id/llAddMentor">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/view_circle_white_border_white">
+
+                    <TextView
+                        android:id="@+id/tvSearchSponsor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:text="Найти Спонсора"
+                        android:textColor="@color/gray_default"
+                        android:textSize="13dp" />
+                </FrameLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civSearchSponsor"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/img_search_sponsor_not_active" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAddNewLesson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/llSearchSponsor"
+                app:layout_constraintEnd_toEndOf="@+id/llSearchSponsor">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/view_circle_white_border_white">
+
+                    <TextView
+                        android:id="@+id/tvAddNewLesson"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:text="Создать свой предмет"
+                        android:textColor="@color/gray_default"
+                        android:textSize="13dp" />
+                </FrameLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civAddNewLesson"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/img_add_new_lesson_not_active" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAddSchool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/llAddNewLesson"
+                app:layout_constraintEnd_toEndOf="@+id/llAddNewLesson">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/view_circle_white_border_white">
+
+                    <TextView
+                        android:id="@+id/tvAddSchool"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:text="Добавить школу"
+                        android:textColor="@color/gray_default"
+                        android:textSize="13dp" />
+                </FrameLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civAddSchool"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/img_school" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <kz.tech.smartgrades.root.custom_view.CustomViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <kz.tech.smartgrades.root.custom_view.CustomViewPager
+            android:id="@+id/FullViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/container2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start|left"
+        app:headerLayout="@layout/navigation_body" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

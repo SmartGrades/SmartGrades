@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="icons">
+        <item>@drawable/img_add_child_active</item>
+        <item>@drawable/img_add_mentor_active</item>
+        <item>@drawable/img_search_sponsor_active</item>
+    </array>
+    <array name="colors">
+        <item>@color/cyan_background</item>
+        <item>@color/green_background</item>
+        <item>@color/orange_background</item>
+    </array>
+</resources>
